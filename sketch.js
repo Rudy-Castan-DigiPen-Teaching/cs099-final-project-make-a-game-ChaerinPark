@@ -4,10 +4,16 @@
 // Spring 2021
 
 
+function preload()
+{
+    click_SFX = loadSound('media/sound/click.wav');
+}
+
 function setup()
 {
     createCanvas( 1200, 800 );
     player_piano = new PianoKeys(110, height-380);
+    click_SFX.setVolume(0.4);
 }
 
 function draw()
@@ -98,14 +104,17 @@ function mouseReleased()
             if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
                 && mouseY > height * 4/7 - Main_button_height/2 && mouseY < height * 4/7 + Main_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = SelectLevel;  //press START button, go to Select level Page
             } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
                 && mouseY > height * 5/7 - Main_button_height/2 && mouseY < height * 5/7 + Main_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = HowToPlay;    //press How to Play button, go to Explain Page
             } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
                 && mouseY > height * 6/7 - Main_button_height/2 && mouseY < height * 6/7 + Main_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = credit;       //press Credit button, go to Credit Page
             }
         } break;
@@ -116,6 +125,7 @@ function mouseReleased()
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
                 && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
                 {
+                    click_SFX.play();
                     CurrentPage = Main;
                 }
         } break;
@@ -127,24 +137,29 @@ function mouseReleased()
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
                 && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
                 {
+                    click_SFX.play();
                     CurrentPage = Main;
                 }
 
             if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = Lv1;
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = Lv2;
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = Lv3;
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
+                click_SFX.play();
                 CurrentPage = Lv4;
             }
         } break;

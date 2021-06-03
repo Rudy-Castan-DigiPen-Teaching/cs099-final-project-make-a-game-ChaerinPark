@@ -25,7 +25,7 @@ function Button(x, y, WIDTH, HEIGHT, TEXT)
         {
             stroke(180, 100, 100);
             fill(240, 160, 160);
-            rect(x, y, WIDTH, HEIGHT);    
+            rect(x, y, WIDTH, HEIGHT);
         }
     }
     pop();

@@ -3,6 +3,7 @@
 // Course     : CS099
 // Spring 2021
 
+let click_SFX;
 
 const Main = 0;
 const SelectLevel = 1;
