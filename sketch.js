@@ -7,6 +7,7 @@
 function setup()
 {
     createCanvas( 1200, 800 );
+    player_piano = new PianoKeys(110, height-380);
 }
 
 function draw()
@@ -60,81 +61,32 @@ function draw()
         case(Lv1):
             {
                 text("Level 1", width/2, height/2);
+                player_piano.draw_whiteKey(110, height-380);
+                player_piano.draw_blackKey(205, height-380);
             } break;
 
         case(Lv2):
             {
                 text("Level 2", width/2, height/2);
+                player_piano.draw_whiteKey(110, height-380);
+                player_piano.draw_blackKey(205, height-380);
             } break;
         case(Lv3):
             {
                 text("Level 3", width/2, height/2);
+                player_piano.draw_whiteKey(110, height-380);
+                player_piano.draw_blackKey(205, height-380);
             } break;
         case(Lv4):
             {
                 text("Level 4", width/2, height/2);
+                player_piano.draw_whiteKey(110, height-380);
+                player_piano.draw_blackKey(205, height-380);
             } break;
 
 
     }
 }
-
-
-function Button(x, y, WIDTH, HEIGHT, TEXT)
-{
-    push();
-    rectMode(CENTER);
-    fill(255);
-    stroke(200, 120, 120);
-    strokeWeight(3);
-    strokeJoin(ROUND);
-    rect(x, y, WIDTH, HEIGHT);
-
-    //Change the buttons' color
-    if(mouseX > x - WIDTH/2 && mouseX < x + WIDTH/2
-        && mouseY > y - HEIGHT/2 && mouseY < y + HEIGHT/2)
-    {
-        fill(255, 230, 230);
-        rect(x, y, WIDTH, HEIGHT);
-
-        if(mouseIsPressed == true)
-        {
-            stroke(180, 100, 100);
-            fill(240, 160, 160);
-            rect(x, y, WIDTH, HEIGHT);    
-        }
-    }
-    pop();
-
-    push();
-    fill(180, 100, 100);
-    textSize(50);
-    text(TEXT, x, y+5);
-    if(mouseX > x - WIDTH/2 && mouseX < x + WIDTH/2
-        && mouseY > y - HEIGHT/2 && mouseY < y + HEIGHT/2)
-    {
-        if(mouseIsPressed == true)
-        {
-            fill(255);
-            text(TEXT, x, y+8);
-        }
-    }
-    pop();
-}
-
-
-function HomeMark(x, y)
-{
-    push();
-    rectMode(CENTER);
-    stroke(200, 120, 120);
-    fill(200, 120, 120);
-    rect(x, y+5, 20, 18);
-    rect(x+9, y-9, 5, 10);
-    triangle(x-17, y, x+17, y, x, y-15);
-    pop();
-}
-
 
 
 function mouseReleased()
@@ -168,6 +120,8 @@ function mouseReleased()
                 }
         } break;
 
+        //width/6, height * 2/7 +10, Level_button_width, Level_button_height
+
         case(SelectLevel):
         {
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
@@ -176,20 +130,20 @@ function mouseReleased()
                     CurrentPage = Main;
                 }
 
-            if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width
-                && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height)
+            if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
             {
                 CurrentPage = Lv1;
-            } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width
-            && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height)
+            } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+            && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
                 CurrentPage = Lv2;
-            } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width
-                && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height)
+            } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
                 CurrentPage = Lv3;
-            } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width
-                && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height)
+            } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
                 CurrentPage = Lv4;
             }
@@ -197,5 +151,10 @@ function mouseReleased()
     }
 
 
+}
 
+
+function mousePressed()
+{
+    console.log(mouseX, mouseY);
 }

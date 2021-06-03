@@ -22,5 +22,10 @@ const GoToMain_button = 50;
 const Level_button_width = 300;
 const Level_button_height = 100;
 
-const key_width = 230;
-const key_height = 440;
+const white_key_width = 140;
+const white_key_height = 370;
+const black_key_width = 90;
+const black_key_height = 225;
+const black_key_interval = 50;
+
+let player_piano;
