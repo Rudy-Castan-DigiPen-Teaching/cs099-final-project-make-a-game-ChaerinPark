@@ -58,3 +58,32 @@ function HomeMark(x, y)
     triangle(x-17, y, x+17, y, x, y-15);
     pop();
 }
+
+
+function speechBubble(current_level)
+{
+    push();
+    rectMode(CENTER);
+    fill(255, 160);
+    noStroke();
+    rect(400, 250, 700, 260);
+    triangle(750, 262, 812, 265, 750, 327);
+    fill(180, 130, 130, 180);
+    textSize(25);
+    text(current_level, 700, 360);
+    fill(180, 130, 130);
+    textSize(40);
+    text("press the same key as her!", 350, 90);
+    pop();
+}
+
+function playing_character()
+{
+    if(second()%2 == 0)
+    {
+        image(chara, 980, 220, 350, 350);
+    } else if(second()%2 == 1)
+    {
+        image(chara_1, 980, 220, 350, 350);
+    }
+}

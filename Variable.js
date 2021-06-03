@@ -5,6 +5,13 @@
 
 let click_SFX;
 
+let chara;
+let chara_1;
+let happy;
+let clear;
+let sad;
+let awkward;
+
 const Main = 0;
 const SelectLevel = 1;
 const HowToPlay = 2;
@@ -15,7 +22,6 @@ const Lv3 = 6;
 const Lv4 = 7;
 
 let CurrentPage = Main;
-
 
 const Main_button_width = 440;
 const Main_button_height = 80;

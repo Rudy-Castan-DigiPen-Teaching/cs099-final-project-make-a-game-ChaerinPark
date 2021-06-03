@@ -6,7 +6,16 @@
 
 function preload()
 {
+    //sound
     click_SFX = loadSound('media/sound/click.wav');
+
+    //pictures
+    chara = loadImage('media/picture/chara1.png');
+    chara_1 = loadImage('media/picture/chara1-1.png');
+    happy = loadImage('media/picture/chara_happy.png');
+    clear = loadImage('media/picture/chara_clear.png');
+    sad = loadImage('media/picture/chara_sad.png');
+    awkward = loadImage('media/picture/chara_awkward.png');
 }
 
 function setup()
@@ -20,6 +29,7 @@ function draw()
 {
     background( 255, 200, 200 );
     textAlign(CENTER, CENTER);
+    imageMode(CENTER);
 
 
     switch(CurrentPage)
@@ -66,28 +76,32 @@ function draw()
 
         case(Lv1):
             {
-                text("Level 1", width/2, height/2);
                 player_piano.draw_whiteKey(110, height-380);
                 player_piano.draw_blackKey(205, height-380);
+                speechBubble("Level 1");
+                playing_character();
             } break;
 
         case(Lv2):
             {
-                text("Level 2", width/2, height/2);
                 player_piano.draw_whiteKey(110, height-380);
                 player_piano.draw_blackKey(205, height-380);
+                speechBubble("Level 2");
+                playing_character();
             } break;
         case(Lv3):
             {
-                text("Level 3", width/2, height/2);
                 player_piano.draw_whiteKey(110, height-380);
                 player_piano.draw_blackKey(205, height-380);
+                speechBubble("Level 3");
+                playing_character();
             } break;
         case(Lv4):
             {
-                text("Level 4", width/2, height/2);
                 player_piano.draw_whiteKey(110, height-380);
                 player_piano.draw_blackKey(205, height-380);
+                speechBubble("Level 4");
+                playing_character();
             } break;
 
 
