@@ -57,6 +57,51 @@ function draw()
                 Button(width/6, height * 4/7 +30, Level_button_width, Level_button_height, "Lv. 3");
                 Button(width/6, height * 5/7 +40, Level_button_width, Level_button_height, "Lv. 4");
 
+                if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                    && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
+                {
+                    push();
+                    stroke(255, 210, 210);
+                    fill(255, 170);
+                    rect(530, 130, 500, 600);
+                    fill(180, 100, 100);
+                    textSize(35);
+                    text("explanation about \n Level 1", 790, 380);
+                    pop();
+                } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                    && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
+                {
+                    push();
+                    stroke(255, 210, 210);
+                    fill(255, 170);
+                    rect(530, 130, 500, 600);
+                    fill(180, 100, 100);
+                    textSize(35);
+                    text("explanation about \n Level 2", 790, 380);
+                    pop();
+                } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                        && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
+                {
+                    push();
+                    stroke(255, 210, 210);
+                    fill(255, 170);
+                    rect(530, 130, 500, 600);
+                    fill(180, 100, 100);
+                    textSize(35);
+                    text("explanation about \n Level 3", 790, 380);
+                    pop();
+                } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
+                    && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
+                {
+                    push();
+                    stroke(255, 210, 210);
+                    fill(255, 170);
+                    rect(530, 130, 500, 600);
+                    fill(180, 100, 100);
+                    textSize(35);
+                    text("explanation about \n Level 4", 790, 380);
+                    pop();
+                }
             } break;
         
         case (HowToPlay):
