@@ -37,9 +37,17 @@ function draw()
     {
         case (Main):
             {
-                Button(width/2, height * 4/7, Main_button_width, Main_button_height, "START");
-                Button(width/2, height * 5/7, Main_button_width, Main_button_height, "How to Play");
-                Button(width/2, height * 6/7, Main_button_width, Main_button_height, "Credit")
+                Button(width/2, height * 4/8, Main_button_width, Main_button_height, "START");
+                Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Shop");
+                Button(width/2, height * 6/8, Main_button_width, Main_button_height, "How to Play");
+                Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Credit")
+            } break;
+
+        case (Shop):
+            {
+                Button(width-50, 50, GoToMain_button, GoToMain_button);
+                HomeMark(width-50, 50);
+
             } break;
 
         case (SelectLevel):
@@ -170,23 +178,38 @@ function mouseReleased()
         case(Main):     //setting buttons in Main page
         {
             if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
-                && mouseY > height * 4/7 - Main_button_height/2 && mouseY < height * 4/7 + Main_button_height/2)
+                && mouseY > height * 4/8 - Main_button_height/2 && mouseY < height * 4/8 + Main_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = SelectLevel;  //press START button, go to Select level Page
             } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
-                && mouseY > height * 5/7 - Main_button_height/2 && mouseY < height * 5/7 + Main_button_height/2)
+                && mouseY > height * 5/8 - Main_button_height/2 && mouseY < height * 6/8 + Main_button_height/2)
+            {
+                click_SFX.play();
+                CurrentPage = Shop;    //press Shop button, go to Shop Page
+            } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
+                && mouseY > height * 6/8 - Main_button_height/2 && mouseY < height * 6/8 + Main_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = HowToPlay;    //press How to Play button, go to Explain Page
             } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
-                && mouseY > height * 6/7 - Main_button_height/2 && mouseY < height * 6/7 + Main_button_height/2)
+                && mouseY > height * 7/8 - Main_button_height/2 && mouseY < height * 7/8 + Main_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = credit;       //press Credit button, go to Credit Page
             }
         } break;
 
+        case(Shop):
+        {
+            if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
+                && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
+                {
+                    click_SFX.play();
+                    CurrentPage = Main;
+                }
+
+        } break;
         case(HowToPlay):
         case(credit):
         {

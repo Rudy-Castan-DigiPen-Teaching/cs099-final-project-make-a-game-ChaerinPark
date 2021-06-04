@@ -20,6 +20,7 @@ const Lv1 = 4;
 const Lv2 = 5;
 const Lv3 = 6;
 const Lv4 = 7;
+const Shop = 8;
 
 let CurrentPage = Main;
 

@@ -28,6 +28,7 @@ And if you success that level, you can choose any level between you done success
 
 In main page, there are 4 buttons and title of game.
   - Start
+  - Shop
   - How to Play
   - Setting
   - Credit
@@ -48,6 +49,16 @@ On that, there is piano keys smaller than that in the speech bubble.
 
 Next to speech bubble, there is a girl character.
 When you press keys, her face change as your score: smile, big smile, sad and awkward.
+
+
+### Shop
+    You can change the sound of keyboard.
+
+There are sounds, classic, electronic, and organ.
+
+You can buy electronic and organ sound by gold.
+
+You can get gold whenever clear each stage. The amount of gold varies from level to level.
 
 
 ### How to Play
