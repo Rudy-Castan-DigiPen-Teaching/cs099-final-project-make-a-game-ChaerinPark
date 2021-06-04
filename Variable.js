@@ -39,5 +39,5 @@ const black_key_width = 90;
 const black_key_height = 225;
 const black_key_interval = 50;
 
-let player_piano;
-let character_piano;
+let player;
+let character;

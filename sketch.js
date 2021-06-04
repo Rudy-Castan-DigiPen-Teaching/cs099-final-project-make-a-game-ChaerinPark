@@ -21,8 +21,8 @@ function preload()
 function setup()
 {
     createCanvas( 1200, 800 );
-    player_piano = new PianoKeys(110, height-380);
-    character_piano = new PianoKeys(85, 200);
+    player = new PianoKeys(110, height-380);
+    character = new PianoKeys(85, 200);
     click_SFX.setVolume(0.4);
 }
 
@@ -104,38 +104,38 @@ function draw()
             {
                 speechBubble("Level 1");
                 playing_character();
-                player_piano.draw_whiteKey(110, height-380, 1);
-                player_piano.draw_blackKey(205, height-380, 1);
-                character_piano.draw_whiteKey(240, 320, 0.5);
-                character_piano.draw_blackKey(336, 320, 0.5);
+                player.draw_player_whiteKey(110, height-380);
+                player.draw_player_blackKey(205, height-380);
+                character.draw_character_whiteKey(140, 160);
+                character.draw_character_blackKey(185, 160);
             } break;
 
         case(Lv2):
             {
                 speechBubble("Level 2");
                 playing_character();
-                player_piano.draw_whiteKey(110, height-380, 1);
-                player_piano.draw_blackKey(205, height-380, 1);
-                character_piano.draw_whiteKey(240, 320, 0.5);
-                character_piano.draw_blackKey(336, 320, 0.5);
+                player.draw_player_whiteKey(110, height-380);
+                player.draw_player_blackKey(205, height-380);
+                character.draw_character_whiteKey(140, 160);
+                character.draw_character_blackKey(185, 160);
             } break;
         case(Lv3):
             {
                 speechBubble("Level 3");
                 playing_character();
-                player_piano.draw_whiteKey(110, height-380, 1);
-                player_piano.draw_blackKey(205, height-380, 1);
-                character_piano.draw_whiteKey(240, 320, 0.5);
-                character_piano.draw_blackKey(336, 320, 0.5);
+                player.draw_player_whiteKey(110, height-380);
+                player.draw_player_blackKey(205, height-380);
+                character.draw_character_whiteKey(140, 160);
+                character.draw_character_blackKey(185, 160);
             } break;
         case(Lv4):
             {
                 speechBubble("Level 4");
                 playing_character();
-                player_piano.draw_whiteKey(110, height-380, 1);
-                player_piano.draw_blackKey(205, height-380, 1);
-                character_piano.draw_whiteKey(240, 320, 0.5);
-                character_piano.draw_blackKey(336, 320, 0.5);
+                player.draw_player_whiteKey(110, height-380);
+                player.draw_player_blackKey(205, height-380);
+                character.draw_character_whiteKey(140, 160);
+                character.draw_character_blackKey(185, 160);
             } break;
 
 
