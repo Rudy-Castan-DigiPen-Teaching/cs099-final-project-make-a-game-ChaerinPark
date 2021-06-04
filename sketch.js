@@ -16,6 +16,8 @@ function preload()
     clear = loadImage('media/picture/chara_clear.png');
     sad = loadImage('media/picture/chara_sad.png');
     awkward = loadImage('media/picture/chara_awkward.png');
+    life = loadImage('media/picture/heart.png');
+    gold = loadImage('media/picture/gold.png');
 }
 
 function setup()
