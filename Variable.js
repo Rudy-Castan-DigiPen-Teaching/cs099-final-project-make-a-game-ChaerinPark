@@ -24,6 +24,9 @@ const Shop = 8;
 
 let CurrentPage = Main;
 
+const explanation_box_width = 500;
+const explanation_box_height = 600;
+
 const Main_button_width = 440;
 const Main_button_height = 80;
 const GoToMain_button = 50;

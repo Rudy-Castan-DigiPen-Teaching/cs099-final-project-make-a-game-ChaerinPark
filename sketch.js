@@ -69,47 +69,19 @@ function draw()
                 if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
                 {
-                    push();
-                    stroke(255, 210, 210);
-                    fill(255, 170);
-                    rect(530, 130, 500, 600);
-                    fill(180, 100, 100);
-                    textSize(35);
-                    text("explanation about \n Level 1", 790, 380);
-                    pop();
+                    explanation_box(530, 130, "explanation about \n Level 1");
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
                 {
-                    push();
-                    stroke(255, 210, 210);
-                    fill(255, 170);
-                    rect(530, 130, 500, 600);
-                    fill(180, 100, 100);
-                    textSize(35);
-                    text("explanation about \n Level 2", 790, 380);
-                    pop();
+                    explanation_box(530, 130, "explanation about \n Level 2");
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                         && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
                 {
-                    push();
-                    stroke(255, 210, 210);
-                    fill(255, 170);
-                    rect(530, 130, 500, 600);
-                    fill(180, 100, 100);
-                    textSize(35);
-                    text("explanation about \n Level 3", 790, 380);
-                    pop();
+                    explanation_box(530, 130, "explanation about \n Level 3");
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
                 {
-                    push();
-                    stroke(255, 210, 210);
-                    fill(255, 170);
-                    rect(530, 130, 500, 600);
-                    fill(180, 100, 100);
-                    textSize(35);
-                    text("explanation about \n Level 4", 790, 380);
-                    pop();
+                    explanation_box(530, 130, "explanation about \n Level 4");
                 }
             } break;
         
@@ -183,7 +155,7 @@ function mouseReleased()
                 click_SFX.play();
                 CurrentPage = SelectLevel;  //press START button, go to Select level Page
             } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
-                && mouseY > height * 5/8 - Main_button_height/2 && mouseY < height * 6/8 + Main_button_height/2)
+                && mouseY > height * 5/8 - Main_button_height/2 && mouseY < height * 5/8 + Main_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Shop;    //press Shop button, go to Shop Page
@@ -221,7 +193,6 @@ function mouseReleased()
                 }
         } break;
 
-        //width/6, height * 2/7 +10, Level_button_width, Level_button_height
 
         case(SelectLevel):
         {

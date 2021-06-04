@@ -87,3 +87,15 @@ function playing_character()
         image(chara_1, 980, 220, 350, 350);
     }
 }
+
+function explanation_box(x, y, about)
+{
+    push();
+    stroke(255, 210, 210);
+    fill(255, 170);
+    rect(x, y, explanation_box_width, explanation_box_height);
+    fill(180, 100, 100);
+    textSize(35);
+    text(about, x + explanation_box_width/2, y + explanation_box_height/8);
+    pop();
+}
