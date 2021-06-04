@@ -17,11 +17,12 @@ class PianoKeys
         
     }
 
-    draw_whiteKey(x, y)
+    draw_whiteKey(x, y, size)
     {
         for(let column = 0; column < 7; column++)
         {
             push();
+            scale(size);
             strokeWeight(2);
             strokeJoin(ROUND);
             stroke(0);
@@ -31,13 +32,14 @@ class PianoKeys
         }
     }
 
-    draw_blackKey(x, y)
+    draw_blackKey(x, y, size)
     {
         for(let column = 0; column < 6; column++)
         {
             if(column !== 2)
             {
                 push();
+                scale(size);
                 strokeWeight(2);
                 strokeJoin(ROUND);
                 stroke(0);

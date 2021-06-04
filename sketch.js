@@ -22,6 +22,7 @@ function setup()
 {
     createCanvas( 1200, 800 );
     player_piano = new PianoKeys(110, height-380);
+    character_piano = new PianoKeys(85, 200);
     click_SFX.setVolume(0.4);
 }
 
@@ -121,32 +122,40 @@ function draw()
 
         case(Lv1):
             {
-                player_piano.draw_whiteKey(110, height-380);
-                player_piano.draw_blackKey(205, height-380);
                 speechBubble("Level 1");
                 playing_character();
+                player_piano.draw_whiteKey(110, height-380, 1);
+                player_piano.draw_blackKey(205, height-380, 1);
+                character_piano.draw_whiteKey(240, 320, 0.5);
+                character_piano.draw_blackKey(336, 320, 0.5);
             } break;
 
         case(Lv2):
             {
-                player_piano.draw_whiteKey(110, height-380);
-                player_piano.draw_blackKey(205, height-380);
                 speechBubble("Level 2");
                 playing_character();
+                player_piano.draw_whiteKey(110, height-380, 1);
+                player_piano.draw_blackKey(205, height-380, 1);
+                character_piano.draw_whiteKey(240, 320, 0.5);
+                character_piano.draw_blackKey(336, 320, 0.5);
             } break;
         case(Lv3):
             {
-                player_piano.draw_whiteKey(110, height-380);
-                player_piano.draw_blackKey(205, height-380);
                 speechBubble("Level 3");
                 playing_character();
+                player_piano.draw_whiteKey(110, height-380, 1);
+                player_piano.draw_blackKey(205, height-380, 1);
+                character_piano.draw_whiteKey(240, 320, 0.5);
+                character_piano.draw_blackKey(336, 320, 0.5);
             } break;
         case(Lv4):
             {
-                player_piano.draw_whiteKey(110, height-380);
-                player_piano.draw_blackKey(205, height-380);
                 speechBubble("Level 4");
                 playing_character();
+                player_piano.draw_whiteKey(110, height-380, 1);
+                player_piano.draw_blackKey(205, height-380, 1);
+                character_piano.draw_whiteKey(240, 320, 0.5);
+                character_piano.draw_blackKey(336, 320, 0.5);
             } break;
 
 
