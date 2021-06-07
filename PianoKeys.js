@@ -19,11 +19,14 @@ class PianoKeys
         strokeWeight(2);
         strokeJoin(ROUND);
         stroke(0);
+        let What_Key_W = ['Z', 'X', 'C', 'V', 'B', 'N', 'M'];
 
         for(let column=0; column < 7; column++)
         {
             fill(255);        
             rect(x + (white_key_width*column+1), y, white_key_width, white_key_height);
+            textSize(60);
+            text(What_Key_W[column], x + white_key_width/2 + (white_key_width*column), y + white_key_height*6/7);
         }
         if(keyIsPressed === true)
         {
@@ -52,6 +55,11 @@ class PianoKeys
                 rect(x + (white_key_width*6+1), y, white_key_width, white_key_height);
             }
             pop();
+            for(let column=0; column < 7; column++)
+            {
+                fill(255);        
+                text(What_Key_W[column], x + white_key_width/2 + (white_key_width*column), y + white_key_height*6/7);
+            }
         }
         pop();
     }
@@ -62,6 +70,7 @@ class PianoKeys
         strokeWeight(2);
         strokeJoin(ROUND);
         stroke(0);
+        let What_Key_B = ['S', 'D', '', 'G', 'H', 'J']
 
         for(let column = 0; column < 6; column++)
         {
@@ -69,6 +78,9 @@ class PianoKeys
             {
                 fill(0);        
                 rect(x + ((black_key_width + black_key_interval)*column+1), y, black_key_width, black_key_height);    
+                fill(255);
+                textSize(55);
+                text(What_Key_B[column], x + + black_key_width/2 + ((black_key_width+black_key_interval)*column), y + black_key_height*5/6);
             }
         }
 
@@ -93,6 +105,14 @@ class PianoKeys
                 rect((x + (black_key_width + black_key_interval)*5+1), y, black_key_width, black_key_height);    
             }
             pop();
+            for(let column = 0; column < 6; column++)
+            {
+                if(column !== 2)
+                {
+                    fill(255);
+                    text(What_Key_B[column], x + + black_key_width/2 + ((black_key_width+black_key_interval)*column), y + black_key_height*5/6);
+                }
+            }
         }
         pop();
     }
