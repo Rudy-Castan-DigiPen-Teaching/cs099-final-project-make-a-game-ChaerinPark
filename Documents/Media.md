@@ -10,11 +10,13 @@
  - gold.png
 
 
-### **This sound effect is made by me, Chaerin Park, with _sfxr_.**
+### **These sound effect are made by me, Chaerin Park, with _sfxr_.**
  - click.wav
+ - right.mav
+ - wrong.wav
 
  
-### **This sound effect is made by me, Chaerin Park, with my keyboard piano.**
+### **These sound effect are made by me, Chaerin Park, with my keyboard piano.**
  - pianoC.mp3
  - pianoCs.mp3
  - pianoD.mp3

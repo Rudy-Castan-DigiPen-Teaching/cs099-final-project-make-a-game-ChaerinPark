@@ -7,7 +7,9 @@
 function preload()
 {
     //sound effects
-    click_SFX = loadSound('media/sound/click.wav');
+    click_SFX = loadSound('media/sound/SFX/click.wav');
+    right_SFX = loadSound('media/sound/SFX/right.wav');
+    wrong_SFX = loadSound('media/sound/SFX/wrong.wav');
 
     //piano
     pianoC = loadSound('media/sound/piano/pianoC.mp3');

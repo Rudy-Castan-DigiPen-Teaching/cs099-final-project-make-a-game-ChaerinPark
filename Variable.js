@@ -4,6 +4,8 @@
 // Spring 2021
 
 let click_SFX;
+let right_SFX;
+let wrong_SFX;
 
 let pianoC;
 let pianoCs;
