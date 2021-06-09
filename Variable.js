@@ -56,3 +56,5 @@ const black_key_interval = 50;
 
 let player;
 let character;
+
+let player_life;
