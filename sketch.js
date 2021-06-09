@@ -6,8 +6,22 @@
 
 function preload()
 {
-    //sound
+    //sound effects
     click_SFX = loadSound('media/sound/click.wav');
+
+    //piano
+    pianoC = loadSound('media/sound/piano/pianoC.mp3');
+    pianoCs = loadSound('media/sound/piano/pianoC#.mp3');
+    pianoD = loadSound('media/sound/piano/pianoD.mp3');
+    pianoDs = loadSound('media/sound/piano/pianoD#.mp3');
+    pianoE = loadSound('media/sound/piano/pianoE.mp3');
+    pianoF = loadSound('media/sound/piano/pianoF.mp3');
+    pianoFs = loadSound('media/sound/piano/pianoF#.mp3');
+    pianoG = loadSound('media/sound/piano/pianoG.mp3');
+    pianoGs = loadSound('media/sound/piano/pianoG#.mp3');
+    pianoA = loadSound('media/sound/piano/pianoA.mp3');
+    pianoAs = loadSound('media/sound/piano/pianoA#.mp3');
+    pianoB = loadSound('media/sound/piano/pianoB.mp3');
 
     //pictures
     chara = loadImage('media/picture/chara1.png');

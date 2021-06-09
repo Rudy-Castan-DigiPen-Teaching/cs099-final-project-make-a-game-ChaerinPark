@@ -5,6 +5,19 @@
 
 let click_SFX;
 
+let pianoC;
+let pianoCs;
+let pianoD;
+let pianoDs;
+let pianoE;
+let pianoF;
+let pianoFs;
+let pianoG;
+let pianoGs;
+let pianoA;
+let pianoAs;
+let pianoB;
+
 let chara;
 let chara_1;
 let happy;
