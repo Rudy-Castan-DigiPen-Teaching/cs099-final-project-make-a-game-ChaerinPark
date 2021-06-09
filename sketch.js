@@ -11,16 +11,16 @@ function preload()
 
     //piano
     pianoC = loadSound('media/sound/piano/pianoC.mp3');
-    pianoCs = loadSound('media/sound/piano/pianoC#.mp3');
+    pianoCs = loadSound('media/sound/piano/pianoCs.mp3');
     pianoD = loadSound('media/sound/piano/pianoD.mp3');
-    pianoDs = loadSound('media/sound/piano/pianoD#.mp3');
+    pianoDs = loadSound('media/sound/piano/pianoDs.mp3');
     pianoE = loadSound('media/sound/piano/pianoE.mp3');
     pianoF = loadSound('media/sound/piano/pianoF.mp3');
-    pianoFs = loadSound('media/sound/piano/pianoF#.mp3');
+    pianoFs = loadSound('media/sound/piano/pianoFs.mp3');
     pianoG = loadSound('media/sound/piano/pianoG.mp3');
-    pianoGs = loadSound('media/sound/piano/pianoG#.mp3');
+    pianoGs = loadSound('media/sound/piano/pianoGs.mp3');
     pianoA = loadSound('media/sound/piano/pianoA.mp3');
-    pianoAs = loadSound('media/sound/piano/pianoA#.mp3');
+    pianoAs = loadSound('media/sound/piano/pianoAs.mp3');
     pianoB = loadSound('media/sound/piano/pianoB.mp3');
 
     //pictures
@@ -245,6 +245,57 @@ function mouseReleased()
 
 
 }
+
+
+//play keyboard sound
+function keyReleased()
+{
+    switch(CurrentPage)
+    {
+        case Lv1:
+        case Lv2:
+        case Lv3:
+        case Lv4:
+            if(key === 'z')
+            {
+                pianoC.play();
+            } else if(key === 'x')
+            {
+                pianoD.play();
+            } else if(key === 'c')
+            {
+                pianoE.play();
+            } else if(key === 'v')
+            {
+                pianoF.play();
+            } else if(key === 'b')
+            {
+                pianoG.play();
+            } else if(key === 'n')
+            {
+                pianoA.play();
+            } else if(key === 'm')
+            {
+                pianoB.play();
+            } else if(key === 's')
+            {
+                pianoCs.play();
+            } else if(key === 'd')
+            {
+                pianoDs.play();
+            } else if(key === 'g')
+            {
+                pianoFs.play();
+            } else if(key === 'h')
+            {
+                pianoGs.play();
+            } else if(key === 'j')
+            {
+                pianoAs.play();
+            }
+    }
+}
+
 
 
 function mousePressed()
