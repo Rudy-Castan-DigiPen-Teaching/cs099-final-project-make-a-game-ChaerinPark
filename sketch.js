@@ -32,7 +32,6 @@ function preload()
     clear = loadImage('media/picture/chara_clear.png');
     sad = loadImage('media/picture/chara_sad.png');
     awkward = loadImage('media/picture/chara_awkward.png');
-    life = loadImage('media/picture/heart.png');
     gold = loadImage('media/picture/gold.png');
 }
 
@@ -127,7 +126,6 @@ function draw()
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
                 character.update_Lv1(140, 160);
-                your_life(800, 60);
             } break;
 
         case(Lv2):
@@ -138,7 +136,6 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
-                your_life(800, 60);
             } break;
         case(Lv3):
             {
@@ -148,7 +145,6 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
-                your_life(800, 60);
             } break;
         case(Lv4):
             {
@@ -158,7 +154,6 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
-                your_life(800, 60);
             } break;
 
 

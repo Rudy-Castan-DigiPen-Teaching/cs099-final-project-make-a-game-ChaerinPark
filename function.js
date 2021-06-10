@@ -99,21 +99,3 @@ function explanation_box(x, y, about)
     text(about, x + explanation_box_width/2, y + explanation_box_height/8);
     pop();
 }
-
-function your_life(x, y)
-{
-    push();
-    textSize(20);
-    text("Life", x-60, y);
-    stroke(255);
-    noFill();
-    rectMode(CENTER);
-    rect(x+25, y, 240, 60);
-    imageMode(CENTER);
-    player_life = []
-    for(let i = 0; i<3; ++i)
-    {
-        player_life.push(image(life, x + i*50, y, 55, 52));
-    }
-    pop();
-}

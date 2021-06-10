@@ -6,7 +6,6 @@
  - chara.clear.png
  - chara_sad.png
  - chara_awkward.png
- - heart.png
  - gold.png
 
 
