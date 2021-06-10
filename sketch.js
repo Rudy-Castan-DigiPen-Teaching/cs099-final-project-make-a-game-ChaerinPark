@@ -40,7 +40,7 @@ function setup()
 {
     createCanvas( 1200, 800 );
     player = new PianoKeys(110, height-380);
-    character = new PianoKeys(85, 200);
+    character = new musicQuestion();
     click_SFX.setVolume(0.4);
 }
 
@@ -126,6 +126,7 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
+                character.update_Lv1(140, 160);
                 your_life(800, 60);
             } break;
 
