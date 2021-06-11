@@ -4,14 +4,13 @@
 // Spring 2021
 
 
-class PianoKeys
+class musicAnswer
 {
     constructor(x, y)
     {
         this.x = x;
         this.y = y;
     }
-
 
     draw_player_whiteKey(x, y)
     {
@@ -119,6 +118,8 @@ class PianoKeys
 
 }
 
+let musicA = [];
+
 //play keyboard sound
 function keyReleased()
 {
@@ -130,39 +131,51 @@ function keyReleased()
         case Lv4:
             if(key === 'z')
             {
+                musicA.push(pianoC);
                 pianoC.play();
             } else if(key === 'x')
             {
+                musicA.push(pianoD);
                 pianoD.play();
             } else if(key === 'c')
             {
+                musicA.push(pianoE);
                 pianoE.play();
             } else if(key === 'v')
             {
+                musicA.push(pianoF);
                 pianoF.play();
             } else if(key === 'b')
             {
+                musicA.push(pianoG);
                 pianoG.play();
             } else if(key === 'n')
             {
+                musicA.push(pianoA);
                 pianoA.play();
             } else if(key === 'm')
             {
+                musicA.push(pianoB);
                 pianoB.play();
             } else if(key === 's')
             {
+                musicA.push(pianoCs);
                 pianoCs.play();
             } else if(key === 'd')
             {
+                musicA.push(pianoDs);
                 pianoDs.play();
             } else if(key === 'g')
             {
+                musicA.push(pianoFs);
                 pianoFs.play();
             } else if(key === 'h')
             {
+                musicA.push(pianoGs);
                 pianoGs.play();
             } else if(key === 'j')
             {
+                musicA.push(pianoAs);
                 pianoAs.play();
             }
     }

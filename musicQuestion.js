@@ -14,17 +14,15 @@ class musicQuestion
         code = [pianoC, pianoCs, pianoD, pianoDs, pianoE, pianoF, pianoFs, pianoG, pianoGs, pianoA, pianoAs, pianoB];
     }
 
-    update_Lv1(x, y)
+    update_Lv1()
     {
         musicQ.push(random(code));
         musicQ.push(random(code));
         musicQ.push(random(code));
-
         for(let i=0; i<4; i++)
         {
             musicQ[i].play(i);
         }
-
     }
 
     draw_character_whiteKey(x, y)
@@ -39,7 +37,6 @@ class musicQuestion
             rect(x + ((white_key_width*0.5)*column+1), y, (white_key_width*0.5), (white_key_height*0.5));
         }
         pop();
-
     }
 
     draw_character_blackKey(x, y)
@@ -58,5 +55,4 @@ class musicQuestion
             }
         }
     }
-
 }

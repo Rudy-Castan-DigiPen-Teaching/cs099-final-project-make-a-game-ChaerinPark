@@ -38,7 +38,7 @@ function preload()
 function setup()
 {
     createCanvas( 1200, 800 );
-    player = new PianoKeys(110, height-380);
+    player = new musicAnswer(110, height-380);
     character = new musicQuestion();
     click_SFX.setVolume(0.4);
 }
