@@ -18,8 +18,6 @@ class musicAnswer
         strokeWeight(2);
         strokeJoin(ROUND);
         stroke(0);
-        let What_Key_W = ['Z', 'X', 'C', 'V', 'B', 'N', 'M'];
-
         for(let column=0; column < 7; column++)
         {
             fill(255);        
@@ -69,8 +67,6 @@ class musicAnswer
         strokeWeight(2);
         strokeJoin(ROUND);
         stroke(0);
-        let What_Key_B = ['S', 'D', '', 'G', 'H', 'J']
-
         for(let column = 0; column < 6; column++)
         {
             if(column !== 2)
@@ -121,7 +117,7 @@ class musicAnswer
 let musicA = [];
 
 //play keyboard sound
-function keyReleased()
+function keyPressed()
 {
     switch(CurrentPage)
     {
@@ -131,51 +127,51 @@ function keyReleased()
         case Lv4:
             if(key === 'z')
             {
-                musicA.push(pianoC);
+                musicA.push("codeC");
                 pianoC.play();
             } else if(key === 'x')
             {
-                musicA.push(pianoD);
+                musicA.push("codeD");
                 pianoD.play();
             } else if(key === 'c')
             {
-                musicA.push(pianoE);
+                musicA.push("codeE");
                 pianoE.play();
             } else if(key === 'v')
             {
-                musicA.push(pianoF);
+                musicA.push("codeF");
                 pianoF.play();
             } else if(key === 'b')
             {
-                musicA.push(pianoG);
+                musicA.push("codeG");
                 pianoG.play();
             } else if(key === 'n')
             {
-                musicA.push(pianoA);
+                musicA.push("codeA");
                 pianoA.play();
             } else if(key === 'm')
             {
-                musicA.push(pianoB);
+                musicA.push("codeB");
                 pianoB.play();
             } else if(key === 's')
             {
-                musicA.push(pianoCs);
+                musicA.push("codeCs");
                 pianoCs.play();
             } else if(key === 'd')
             {
-                musicA.push(pianoDs);
+                musicA.push("codeDs");
                 pianoDs.play();
             } else if(key === 'g')
             {
-                musicA.push(pianoFs);
+                musicA.push("codeFs");
                 pianoFs.play();
             } else if(key === 'h')
             {
-                musicA.push(pianoGs);
+                musicA.push("codeGs");
                 pianoGs.play();
             } else if(key === 'j')
             {
-                musicA.push(pianoAs);
+                musicA.push("codeAs");
                 pianoAs.play();
             }
     }

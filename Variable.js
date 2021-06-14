@@ -54,5 +54,8 @@ const black_key_width = 90;
 const black_key_height = 225;
 const black_key_interval = 50;
 
+let What_Key_B = ["S", "D", "", "G", "H", "J"]
+let What_Key_W = ["Z", "X", "C", "V", "B", "N", "M"];
+
 let player;
 let character;

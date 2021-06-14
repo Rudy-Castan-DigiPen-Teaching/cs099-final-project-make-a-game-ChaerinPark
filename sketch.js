@@ -38,9 +38,8 @@ function preload()
 function setup()
 {
     createCanvas( 1200, 800 );
+    character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
-    character = new musicQuestion();
-    click_SFX.setVolume(0.4);
 }
 
 function draw()
@@ -48,7 +47,6 @@ function draw()
     background( 255, 200, 200 );
     textAlign(CENTER, CENTER);
     imageMode(CENTER);
-
 
     switch(CurrentPage)
     {
@@ -120,12 +118,11 @@ function draw()
         case(Lv1):
             {
                 speechBubble("Level 1");
+                character.draw_character_whiteKey(140, 160);
+                character.draw_character_blackKey(185, 160);
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
                 player.draw_player_blackKey(205, height-380);
-                character.draw_character_whiteKey(140, 160);
-                character.draw_character_blackKey(185, 160);
-                character.update_Lv1(140, 160);
             } break;
 
         case(Lv2):
@@ -226,21 +223,25 @@ function mouseReleased()
             {
                 click_SFX.play();
                 CurrentPage = Lv1;
+                character.update_Lv1();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv2;
+                character.update_Lv2();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv3;
+                character.update_Lv3();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv4;
+                character.update_Lv4();
             }
         } break;
     }
