@@ -7,6 +7,9 @@
  - chara_sad.png
  - chara_awkward.png
  - gold.png
+ - illust_piano.png
+ - illust_accordion.png
+ - illust_celesta.png
 
 
 ### **These sound effect are made by me, Chaerin Park, with _sfxr_.**
