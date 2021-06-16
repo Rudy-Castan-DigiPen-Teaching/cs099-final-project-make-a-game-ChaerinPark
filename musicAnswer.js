@@ -174,6 +174,8 @@ function keyPressed()
                 musicA.push("codeAs");
                 pianoAs.play();
             }
+
+            judgement();
     }
 }
 
