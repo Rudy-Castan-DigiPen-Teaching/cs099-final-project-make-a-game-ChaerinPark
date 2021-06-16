@@ -107,6 +107,7 @@ function judgement()
         {
             wrong_SFX.play();
             image(sad, 980, 220, 350, 350);
+            splice(0, musicA.length)
         } else if(musicQ[i] == musicA[i])
         {
             right_SFX.play();
@@ -116,6 +117,7 @@ function judgement()
         {
             right_SFX.play();
             image(clear, 980, 220, 350, 350);
+            splice(0, musicA.length)
         }
     }
 }

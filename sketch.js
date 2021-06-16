@@ -218,30 +218,30 @@ function mouseReleased()
                     click_SFX.play();
                     CurrentPage = Main;
                 }
-
             if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv1;
+                updateLevel1();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv2;
-                character.update_Lv2();
+                updateLevel2();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv3;
-                character.update_Lv3();
+                updateLevel3();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv4;
-                character.update_Lv4();
+                updateLevel4();
             }
         } break;
     }
