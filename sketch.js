@@ -84,19 +84,19 @@ function draw()
                 if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
                 {
-                    explanation_box(530, 130, "explanation about \n Level 1");
+                    explanation_box(530, 130, explanation_box_width, explanation_box_height, "explanation about \n Level 1");
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
                 {
-                    explanation_box(530, 130, "explanation about \n Level 2");
+                    explanation_box(530, 130, explanation_box_width, explanation_box_height, "explanation about \n Level 2");
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                         && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
                 {
-                    explanation_box(530, 130, "explanation about \n Level 3");
+                    explanation_box(530, 130, explanation_box_width, explanation_box_height, "explanation about \n Level 3");
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
                 {
-                    explanation_box(530, 130, "explanation about \n Level 4");
+                    explanation_box(530, 130, explanation_box_width, explanation_box_height, "explanation about \n Level 4");
                 }
             } break;
         
@@ -123,6 +123,7 @@ function draw()
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
                 player.draw_player_blackKey(205, height-380);
+                timer(900, 60, 30);
             } break;
 
         case(Lv2):
@@ -223,7 +224,6 @@ function mouseReleased()
             {
                 click_SFX.play();
                 CurrentPage = Lv1;
-                character.update_Lv1();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
