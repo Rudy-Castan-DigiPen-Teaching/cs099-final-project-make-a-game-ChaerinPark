@@ -82,9 +82,15 @@ function playing_character()
     if(second()%2 == 0)
     {
         image(chara, 980, 220, 350, 350);
-    } else if(second()%2 == 1)
-    {
+    } else{
         image(chara_1, 980, 220, 350, 350);
+    }
+    if(wrong_SFX.isPlaying() === true)
+    {
+        image(sad, 980, 220, 350, 350);
+    } else if(right_SFX.isPlaying() === true)
+    {
+        image(happy, 980, 220, 350, 350);
     }
 }
 
