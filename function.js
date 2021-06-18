@@ -33,14 +33,14 @@ function Button(x, y, WIDTH, HEIGHT, TEXT)
     push();
     fill(180, 100, 100);
     textSize(50);
-    text(TEXT, x, y+5);
+    text(TEXT, x, y+2);
     if(mouseX > x - WIDTH/2 && mouseX < x + WIDTH/2
         && mouseY > y - HEIGHT/2 && mouseY < y + HEIGHT/2)
     {
         if(mouseIsPressed == true)
         {
             fill(255);
-            text(TEXT, x, y+8);
+            text(TEXT, x, y+3);
         }
     }
     pop();
@@ -114,14 +114,14 @@ function judgement()
         if(musicA.length === i+1 && musicQ[i] !== musicA[i])
         {
             wrong_SFX.play();
-            image(sad, 980, 220, 350, 350);
+            image(awkward, 980, 220, 350, 350);
 
         }
     
         if(musicA.length == musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
         {
             right_SFX.play();
-            image(clear, 980, 220, 350, 350);
+            image(happy, 980, 220, 350, 350);
             musicQ_sound.splice(0, musicQ_sound.length);
             musicQ.splice(0, musicQ.length);
             musicA.splice(0, musicA.length);

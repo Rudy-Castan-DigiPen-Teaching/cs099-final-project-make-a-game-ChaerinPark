@@ -33,6 +33,9 @@ function preload()
     sad = loadImage('media/picture/chara_sad.png');
     awkward = loadImage('media/picture/chara_awkward.png');
     gold = loadImage('media/picture/gold.png');
+    grandPiano = loadImage('media/picture/illust_piano.png');
+    accordion = loadImage('media/picture/illust_accordion.png');
+    celesta = loadImage('media/picture/illust_celesta.png');
 }
 
 function setup()
@@ -62,7 +65,23 @@ function draw()
             {
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
-
+                push();
+                noStroke();
+                fill(255, 120);
+                rectMode(CENTER);
+                rect(width/6, height/3+50, 280, 280);
+                rect(width/2, height/3+50, 280, 280);
+                rect(width*5/6, height/3+50, 280, 280);
+                pop();
+                image(grandPiano, width/6, height/3+50, 250, 250);
+                image(celesta, width/2, height/3+50, 250, 250);
+                image(accordion, width*5/6, height/3+50, 250, 250);
+                Button(width/6, height*2/3-20, shop_button_width, shop_button_height*3/4, "▶");
+                Button(width/6, height*2/3+50, shop_button_width, shop_button_height, "Select");
+                Button(width/2, height*2/3-20, shop_button_width, shop_button_height*3/4, "▶");
+                Button(width/2, height*2/3+50, shop_button_width, shop_button_height, "Select");
+                Button(width*5/6, height*2/3-20, shop_button_width, shop_button_height*3/4, "▶");
+                Button(width*5/6, height*2/3+50, shop_button_width, shop_button_height, "Select");
             } break;
 
         case (SelectLevel):
@@ -190,11 +209,27 @@ function mouseReleased()
 
         case(Shop):
         {
+            let sample_piano = [pianoC, pianoD, pianoE, pianoF, pianoG];
+
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
                 && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
                 {
                     click_SFX.play();
                     CurrentPage = Main;
+                }
+            if(mouseX > width/6 - shop_button_width/2 && mouseX < width/6 + shop_button_width/2
+                && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
+            {
+                for(let i = 0; i < sample_piano.length; i++)
+                {
+                    sample_piano[i].play(i/4);
+                }
+            }
+            if(mouseX > width/6 - shop_button_width/2 && mouseX < width/6 + shop_button_width/2
+                && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
+                {
+                    click_SFX.play();
+                    
                 }
 
         } break;

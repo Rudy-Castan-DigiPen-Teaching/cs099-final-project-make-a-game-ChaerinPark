@@ -47,6 +47,8 @@ const Main_button_height = 80;
 const GoToMain_button = 50;
 const Level_button_width = 300;
 const Level_button_height = 100;
+const shop_button_width = 250;
+const shop_button_height = 70;
 
 const white_key_width = 140;
 const white_key_height = 370;
