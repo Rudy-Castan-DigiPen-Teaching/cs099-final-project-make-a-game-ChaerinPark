@@ -119,6 +119,30 @@ function updateLevel4()
 }
 
 
+function judgement()
+{
+    for(let i = 0; i < musicQ.length; i++)
+    {
+        if(musicA.length === i+1 && musicQ[i] !== musicA[i])
+        {
+            wrong_SFX.play();
+            image(awkward, 980, 220, 350, 350);
+            musicQ_sound.splice(0, musicQ_sound.length);
+            musicQ.splice(0, musicQ.length);
+            musicA.splice(0, musicA.length);
+        }
+    
+        if(musicA.length == musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
+        {
+            right_SFX.play();
+            image(happy, 980, 220, 350, 350);
+            musicQ_sound.splice(0, musicQ_sound.length);
+            musicQ.splice(0, musicQ.length);
+            musicA.splice(0, musicA.length);
+        }
+    }
+}
+
 
 function make_musicQ_array()
 {
