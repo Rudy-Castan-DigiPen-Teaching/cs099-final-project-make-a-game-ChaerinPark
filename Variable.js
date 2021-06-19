@@ -99,3 +99,6 @@ let character;
 
 //for set sound to each level
 let current_instrument;
+
+//for store player's gold
+let current_gold = 0;

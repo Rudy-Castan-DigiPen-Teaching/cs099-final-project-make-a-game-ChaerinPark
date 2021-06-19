@@ -282,7 +282,6 @@ function keyPressed()
                     accordionAs.play();
                 }
             }
-
             judgement();
     }
 }

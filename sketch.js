@@ -114,8 +114,11 @@ function draw()
                 rect(width/2, height/3+50, 280, 280);
                 rect(width*5/6, height/3+50, 280, 280);
                 textSize(40);
-                text("NOW: " + current_instrument, width/5, height/8);
+                text("NOW: " + current_instrument, width*2/3, height/8);
+                fill(180, 100, 100);
+                text(current_gold, width/4-30, height/8+5);
                 pop();
+                image(gold, width/6, height/8, 72, 72);
                 image(grandPiano, width/6, height/3+50, 250, 250);
                 image(celesta, width/2, height/3+50, 250, 250);
                 image(accordion, width*5/6, height/3+50, 250, 250);

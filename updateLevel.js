@@ -39,11 +39,11 @@ function updateLevel2()
         make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
         make_musicQ_array();   
     } else if(current_instrument === "ACCORDION")
     {
@@ -69,10 +69,10 @@ function updateLevel3()
         make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
         make_musicQ_array();   
     } else if(current_instrument === "ACCORDION")
     {
@@ -99,12 +99,12 @@ function updateLevel4()
         make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
-        musicQ_sound.push(random(celestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
+        musicQ_sound.push(random(CelestaCode));
         make_musicQ_array();   
     } else if(current_instrument === "ACCORDION")
     {

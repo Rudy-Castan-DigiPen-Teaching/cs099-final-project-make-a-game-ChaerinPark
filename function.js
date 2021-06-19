@@ -115,7 +115,9 @@ function judgement()
         {
             wrong_SFX.play();
             image(awkward, 980, 220, 350, 350);
-
+            musicQ_sound.splice(0, musicQ_sound.length);
+            musicQ.splice(0, musicQ.length);
+            musicA.splice(0, musicA.length);
         }
     
         if(musicA.length == musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
