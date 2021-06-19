@@ -114,23 +114,3 @@ class musicQuestion
         pop();
     }
 }
-
-
-function timer(x, y, size)
-{
-    let timeLimit = 5;
-    textSize(size);
-    text("TIME " + timeLimit, x, y);
-    if(frameCount % 60 == 0 && timeLimit > 0)
-    {
-        timeLimit--;
-    }
-    if(timeLimit == 0)
-    {
-        //라이프 감소
-        wrong_SFX.play();
-        image(sad, 980, 220, 350, 350);
-        musicQ.splice(0, musicQ.length-1);
-        musicA.splice(0, musicA.length-1);
-    }
-}

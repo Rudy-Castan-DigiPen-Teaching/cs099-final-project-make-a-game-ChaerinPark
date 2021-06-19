@@ -185,7 +185,6 @@ function draw()
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
                 player.draw_player_blackKey(205, height-380);
-                timer(900, 60, 30);
             } break;
 
         case(Lv2):
