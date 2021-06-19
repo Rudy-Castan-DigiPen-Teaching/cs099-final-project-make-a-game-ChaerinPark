@@ -25,6 +25,34 @@ function preload()
     pianoAs = loadSound('media/sound/piano/pianoAs.mp3');
     pianoB = loadSound('media/sound/piano/pianoB.mp3');
 
+    //celesta
+    celestaC = loadSound('media/sound/celesta/celestaC.mp3');
+    celestaCs = loadSound('media/sound/celesta/celestaCs.mp3');
+    celestaD = loadSound('media/sound/celesta/celestaD.mp3');
+    celestaDs = loadSound('media/sound/celesta/celestaDs.mp3');
+    celestaE = loadSound('media/sound/celesta/celestaE.mp3');
+    celestaF = loadSound('media/sound/celesta/celestaF.mp3');
+    celestaFs = loadSound('media/sound/celesta/celestaFs.mp3');
+    celestaG = loadSound('media/sound/celesta/celestaG.mp3');
+    celestaGs = loadSound('media/sound/celesta/celestaGs.mp3');
+    celestaA = loadSound('media/sound/celesta/celestaA.mp3');
+    celestaAs = loadSound('media/sound/celesta/celestaAs.mp3');
+    celestaB = loadSound('media/sound/celesta/celestaB.mp3');
+
+    //accordion
+    accordionC = loadSound('media/sound/accordion/accordionC.mp3');
+    accordionCs = loadSound('media/sound/accordion/accordionCs.mp3');
+    accordionD = loadSound('media/sound/accordion/accordionD.mp3');
+    accordionDs = loadSound('media/sound/accordion/accordionDs.mp3');
+    accordionE = loadSound('media/sound/accordion/accordionE.mp3');
+    accordionF = loadSound('media/sound/accordion/accordionF.mp3');
+    accordionFs = loadSound('media/sound/accordion/accordionFs.mp3');
+    accordionG = loadSound('media/sound/accordion/accordionG.mp3');
+    accordionGs = loadSound('media/sound/accordion/accordionGs.mp3');
+    accordionA = loadSound('media/sound/accordion/accordionA.mp3');
+    accordionAs = loadSound('media/sound/accordion/accordionAs.mp3');
+    accordionB = loadSound('media/sound/accordion/accordionB.mp3');    
+
     //pictures
     chara = loadImage('media/picture/chara1.png');
     chara_1 = loadImage('media/picture/chara1-1.png');
@@ -43,6 +71,18 @@ function setup()
     createCanvas( 1200, 800 );
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
+    celestaC.setVolume(10);
+    celestaCs.setVolume(10);
+    celestaD.setVolume(10);
+    celestaDs.setVolume(10);
+    celestaE.setVolume(10);
+    celestaF.setVolume(10);
+    celestaFs.setVolume(10);
+    celestaG.setVolume(10);
+    celestaGs.setVolume(10);
+    celestaA.setVolume(10);
+    celestaAs.setVolume(10);
+    celestaB.setVolume(10);
 }
 
 function draw()
@@ -210,13 +250,18 @@ function mouseReleased()
         case(Shop):
         {
             let sample_piano = [pianoC, pianoD, pianoE, pianoF, pianoG];
+            let sample_celesta = [celestaC, celestaD, celestaE, celestaF, celestaG];
+            let sample_accordion = [accordionC, accordionD, accordionE, accordionF, accordionG];
 
+            //go to main page
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
                 && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
                 {
                     click_SFX.play();
                     CurrentPage = Main;
                 }
+
+            //sample sound play
             if(mouseX > width/6 - shop_button_width/2 && mouseX < width/6 + shop_button_width/2
                 && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
             {
@@ -225,17 +270,45 @@ function mouseReleased()
                     sample_piano[i].play(i/4);
                 }
             }
+            if(mouseX > width/2 - shop_button_width/2 && mouseX < width/2 + shop_button_width/2
+                && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
+            {
+                for(let i = 0; i < sample_celesta.length; i++)
+                {
+                    sample_celesta[i].play(i/4);
+                }
+            }
+            if(mouseX > width*5/6 - shop_button_width/2 && mouseX < width*5/6 + shop_button_width/2
+                && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
+            {
+                for(let i = 0; i < sample_piano.length; i++)
+                {
+                    sample_accordion[i].play(i/4);
+                }
+            }
+
+            //select instrument
             if(mouseX > width/6 - shop_button_width/2 && mouseX < width/6 + shop_button_width/2
                 && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
-                {
-                    click_SFX.play();
-                    
-                }
+            {
+                click_SFX.play();
+            }
+            if(mouseX > width/2 - shop_button_width/2 && mouseX < width/2 + shop_button_width/2
+                && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
+            {
+                click_SFX.play();
+            }
+            if(mouseX > width*5/6 - shop_button_width/2 && mouseX < width*5/6 + shop_button_width/2
+                && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
+            {
+                click_SFX.play();
+            }
 
         } break;
         case(HowToPlay):
         case(credit):
         {
+            //go to main page
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
                 && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
                 {
@@ -247,12 +320,14 @@ function mouseReleased()
 
         case(SelectLevel):
         {
+            //go to main page
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
                 && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
                 {
                     click_SFX.play();
                     CurrentPage = Main;
                 }
+            //select Level
             if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
             {
