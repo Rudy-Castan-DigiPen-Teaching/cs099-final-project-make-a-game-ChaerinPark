@@ -83,6 +83,7 @@ function setup()
     celestaA.setVolume(10);
     celestaAs.setVolume(10);
     celestaB.setVolume(10);
+    current_instrument = "PIANO";
 }
 
 function draw()
@@ -112,6 +113,8 @@ function draw()
                 rect(width/6, height/3+50, 280, 280);
                 rect(width/2, height/3+50, 280, 280);
                 rect(width*5/6, height/3+50, 280, 280);
+                textSize(40);
+                text("NOW: " + current_instrument, width/5, height/8);
                 pop();
                 image(grandPiano, width/6, height/3+50, 250, 250);
                 image(celesta, width/2, height/3+50, 250, 250);
@@ -292,17 +295,21 @@ function mouseReleased()
                 && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
             {
                 click_SFX.play();
+                current_instrument = "PIANO";
             }
             if(mouseX > width/2 - shop_button_width/2 && mouseX < width/2 + shop_button_width/2
                 && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
             {
                 click_SFX.play();
+                current_instrument = "CELESTA";
             }
             if(mouseX > width*5/6 - shop_button_width/2 && mouseX < width*5/6 + shop_button_width/2
                 && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
             {
                 click_SFX.play();
+                current_instrument = "ACCORDION";
             }
+            storeItem(current_instrument, current_instrument);
 
         } break;
         case(HowToPlay):

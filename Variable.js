@@ -96,3 +96,6 @@ let What_Key_W = ["Z", "X", "C", "V", "B", "N", "M"];
 //create new class
 let player;
 let character;
+
+//for set sound to each level
+let current_instrument;
