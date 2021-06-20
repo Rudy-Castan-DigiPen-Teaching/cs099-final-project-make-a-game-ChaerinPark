@@ -282,7 +282,7 @@ function keyPressed()
                     accordionAs.play();
                 }
             }
-            judgement();
+            LEVEL.judgement();
     }
 }
 

@@ -71,6 +71,7 @@ function setup()
     createCanvas( 1200, 800 );
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
+    LEVEL = new Stage();
     celestaC.setVolume(10);
     celestaCs.setVolume(10);
     celestaD.setVolume(10);
@@ -342,25 +343,27 @@ function mouseReleased()
             {
                 click_SFX.play();
                 CurrentPage = Lv1;
-                updateLevel1();
+                LEVEL.updateLevel1();
+                LEVEL.musicQ_play();
+                LEVEL.make_musicQ_array();        
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv2;
-                updateLevel2();
+                LEVEL.updateLevel2();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv3;
-                updateLevel3();
+                LEVEL.updateLevel3();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
                 click_SFX.play();
                 CurrentPage = Lv4;
-                updateLevel4();
+                LEVEL.updateLevel4();
             }
         } break;
     }
