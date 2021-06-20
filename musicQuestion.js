@@ -85,23 +85,23 @@ class musicQuestion
             }
         }
         fill(255, 90, 110);
-        if(pianoCs.isPlaying() === true || celestaCs.isPlaying() === true || accordionCs.isPlaying === true)
+        if(pianoCs.isPlaying() === true || celestaCs.isPlaying() === true || accordionCs.isPlaying() === true)
         {
         rect(x+1, y, (black_key_width*0.5), (black_key_height*0.5));    
         }
-        if(pianoDs.isPlaying() === true || celestaDs.isPlaying() === true || accordionDs.isPlaying === true)
+        if(pianoDs.isPlaying() === true || celestaDs.isPlaying() === true || accordionDs.isPlaying() === true)
         {
         rect(x + (((black_key_width + black_key_interval)*0.5)+1), y, (black_key_width*0.5), (black_key_height*0.5));    
         }
-        if(pianoFs.isPlaying() === true || celestaFs.isPlaying() === true || accordionFs.isPlaying === true)
+        if(pianoFs.isPlaying() === true || celestaFs.isPlaying() === true || accordionFs.isPlaying() === true)
         {
         rect(x + (((black_key_width + black_key_interval)*0.5)*3+1), y, (black_key_width*0.5), (black_key_height*0.5));    
         }
-        if(pianoGs.isPlaying() === true || celestaGs.isPlaying() === true || accordionGs.isPlaying === true)
+        if(pianoGs.isPlaying() === true || celestaGs.isPlaying() === true || accordionGs.isPlaying() === true)
         {
         rect(x + (((black_key_width + black_key_interval)*0.5)*4+1), y, (black_key_width*0.5), (black_key_height*0.5));    
         }
-        if(pianoAs.isPlaying() === true || celestaAs.isPlaying() === true || accordionAs.isPlaying === true)
+        if(pianoAs.isPlaying() === true || celestaAs.isPlaying() === true || accordionAs.isPlaying() === true)
         {
         rect(x + (((black_key_width + black_key_interval)*0.5)*5+1), y, (black_key_width*0.5), (black_key_height*0.5));    
         }
