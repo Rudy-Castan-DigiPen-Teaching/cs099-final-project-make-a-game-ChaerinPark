@@ -10,23 +10,19 @@ function updateLevel1()
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
-        musicQ_play();
-        make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
-        musicQ_play();
-        make_musicQ_array();    
     } else if(current_instrument === "ACCORDION")
     {
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
-        musicQ_play();
-        make_musicQ_array();    
     }
+    musicQ_play();
+    make_musicQ_array();    
 }
 
 
@@ -39,8 +35,6 @@ function updateLevel2()
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
-        musicQ_play();
-        make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
         musicQ_sound.push(random(CelestaCode));
@@ -48,8 +42,6 @@ function updateLevel2()
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
-        musicQ_play();
-        make_musicQ_array();   
     } else if(current_instrument === "ACCORDION")
     {
         musicQ_sound.push(random(AccordionCode));
@@ -57,9 +49,9 @@ function updateLevel2()
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
-        musicQ_play();
-        make_musicQ_array();   
     }
+    musicQ_play();
+    make_musicQ_array();   
 }
 
 
@@ -72,25 +64,21 @@ function updateLevel3()
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
-        musicQ_play();
-        make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
-        musicQ_play();
-        make_musicQ_array();   
     } else if(current_instrument === "ACCORDION")
     {
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
-        musicQ_play();
-        make_musicQ_array();   
     }
+    musicQ_play();
+    make_musicQ_array();   
 }
 
 
@@ -105,8 +93,6 @@ function updateLevel4()
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
         musicQ_sound.push(random(PianoCode));
-        musicQ_play();
-        make_musicQ_array();    
     } else if(current_instrument === "CELESTA")
     {
         musicQ_sound.push(random(CelestaCode));
@@ -115,8 +101,6 @@ function updateLevel4()
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
         musicQ_sound.push(random(CelestaCode));
-        musicQ_play();
-        make_musicQ_array();   
     } else if(current_instrument === "ACCORDION")
     {
         musicQ_sound.push(random(AccordionCode));
@@ -125,9 +109,9 @@ function updateLevel4()
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
-        musicQ_play();
-        make_musicQ_array();   
     }
+    musicQ_play();
+    make_musicQ_array();   
 }
 
 function musicQ_play()
