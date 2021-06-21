@@ -85,12 +85,12 @@ function draw()
         case (Main):
             {
                 Button(width/2, height * 4/8, Main_button_width, Main_button_height, "START");
-                Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Shop");
+                Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Option");
                 Button(width/2, height * 6/8, Main_button_width, Main_button_height, "How to Play");
                 Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Credit")
             } break;
 
-        case (Shop):
+        case (Option):
             {
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
@@ -104,18 +104,16 @@ function draw()
                 textSize(40);
                 text("NOW: " + current_instrument, width*2/3, height/8);
                 fill(180, 100, 100);
-                text(current_gold, width/4-30, height/8+5);
                 pop();
-                image(gold, width/6, height/8, 72, 72);
                 image(grandPiano, width/6, height/3+50, 250, 250);
                 image(celesta, width/2, height/3+50, 250, 250);
                 image(accordion, width*5/6, height/3+50, 250, 250);
-                Button(width/6, height*2/3-20, shop_button_width, shop_button_height*3/4, "▶");
-                Button(width/6, height*2/3+50, shop_button_width, shop_button_height, "Select");
-                Button(width/2, height*2/3-20, shop_button_width, shop_button_height*3/4, "▶");
-                Button(width/2, height*2/3+50, shop_button_width, shop_button_height, "Select");
-                Button(width*5/6, height*2/3-20, shop_button_width, shop_button_height*3/4, "▶");
-                Button(width*5/6, height*2/3+50, shop_button_width, shop_button_height, "Select");
+                Button(width/6, height*2/3-20, Option_button_width, Option_button_height*3/4, "▶");
+                Button(width/6, height*2/3+50, Option_button_width, Option_button_height, "Select");
+                Button(width/2, height*2/3-20, Option_button_width, Option_button_height*3/4, "▶");
+                Button(width/2, height*2/3+50, Option_button_width, Option_button_height, "Select");
+                Button(width*5/6, height*2/3-20, Option_button_width, Option_button_height*3/4, "▶");
+                Button(width*5/6, height*2/3+50, Option_button_width, Option_button_height, "Select");
             } break;
 
         case (SelectLevel):
@@ -230,7 +228,7 @@ function mouseReleased()
                 && mouseY > height * 5/8 - Main_button_height/2 && mouseY < height * 5/8 + Main_button_height/2)
             {
                 click_SFX.play();
-                CurrentPage = Shop;    //press Shop button, go to Shop Page
+                CurrentPage = Option;    //press Option button, go to Option Page
             } else if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
                 && mouseY > height * 6/8 - Main_button_height/2 && mouseY < height * 6/8 + Main_button_height/2)
             {
@@ -244,7 +242,7 @@ function mouseReleased()
             }
         } break;
 
-        case(Shop):
+        case(Option):
         {
             let sample_piano = [pianoC, pianoD, pianoE, pianoF, pianoG];
             let sample_celesta = [celestaC, celestaD, celestaE, celestaF, celestaG];
@@ -259,24 +257,24 @@ function mouseReleased()
                 }
 
             //sample sound play
-            if(mouseX > width/6 - shop_button_width/2 && mouseX < width/6 + shop_button_width/2
-                && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
+            if(mouseX > width/6 - Option_button_width/2 && mouseX < width/6 + Option_button_width/2
+                && mouseY > height*2/3-20 - Option_button_height*3/8 && mouseY < height*2/3-20 + Option_button_height*3/8)
             {
                 for(let i = 0; i < sample_piano.length; i++)
                 {
                     sample_piano[i].play(i/4);
                 }
             }
-            if(mouseX > width/2 - shop_button_width/2 && mouseX < width/2 + shop_button_width/2
-                && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
+            if(mouseX > width/2 - Option_button_width/2 && mouseX < width/2 + Option_button_width/2
+                && mouseY > height*2/3-20 - Option_button_height*3/8 && mouseY < height*2/3-20 + Option_button_height*3/8)
             {
                 for(let i = 0; i < sample_celesta.length; i++)
                 {
                     sample_celesta[i].play(i/4);
                 }
             }
-            if(mouseX > width*5/6 - shop_button_width/2 && mouseX < width*5/6 + shop_button_width/2
-                && mouseY > height*2/3-20 - shop_button_height*3/8 && mouseY < height*2/3-20 + shop_button_height*3/8)
+            if(mouseX > width*5/6 - Option_button_width/2 && mouseX < width*5/6 + Option_button_width/2
+                && mouseY > height*2/3-20 - Option_button_height*3/8 && mouseY < height*2/3-20 + Option_button_height*3/8)
             {
                 for(let i = 0; i < sample_piano.length; i++)
                 {
@@ -285,20 +283,20 @@ function mouseReleased()
             }
 
             //select instrument
-            if(mouseX > width/6 - shop_button_width/2 && mouseX < width/6 + shop_button_width/2
-                && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
+            if(mouseX > width/6 - Option_button_width/2 && mouseX < width/6 + Option_button_width/2
+                && mouseY > height*2/3+50 - Option_button_height*3/8 && mouseY < height*2/3+50 + Option_button_height*3/8)
             {
                 click_SFX.play();
                 current_instrument = "PIANO";
             }
-            if(mouseX > width/2 - shop_button_width/2 && mouseX < width/2 + shop_button_width/2
-                && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
+            if(mouseX > width/2 - Option_button_width/2 && mouseX < width/2 + Option_button_width/2
+                && mouseY > height*2/3+50 - Option_button_height*3/8 && mouseY < height*2/3+50 + Option_button_height*3/8)
             {
                 click_SFX.play();
                 current_instrument = "CELESTA";
             }
-            if(mouseX > width*5/6 - shop_button_width/2 && mouseX < width*5/6 + shop_button_width/2
-                && mouseY > height*2/3+50 - shop_button_height*3/8 && mouseY < height*2/3+50 + shop_button_height*3/8)
+            if(mouseX > width*5/6 - Option_button_width/2 && mouseX < width*5/6 + Option_button_width/2
+                && mouseY > height*2/3+50 - Option_button_height*3/8 && mouseY < height*2/3+50 + Option_button_height*3/8)
             {
                 click_SFX.play();
                 current_instrument = "ACCORDION";

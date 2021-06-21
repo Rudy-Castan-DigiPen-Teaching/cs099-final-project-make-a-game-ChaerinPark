@@ -68,7 +68,7 @@ const Lv1 = 4;
 const Lv2 = 5;
 const Lv3 = 6;
 const Lv4 = 7;
-const Shop = 8;
+const Option = 8;
 let CurrentPage = Main;
 
 //variables of functions
@@ -80,8 +80,8 @@ const Main_button_height = 80;
 const GoToMain_button = 50;
 const Level_button_width = 300;
 const Level_button_height = 100;
-const shop_button_width = 250;
-const shop_button_height = 70;
+const Option_button_width = 250;
+const Option_button_height = 70;
 
 const white_key_width = 140;
 const white_key_height = 370;
@@ -99,9 +99,6 @@ let character;
 
 //for set sound to each level
 let current_instrument;
-
-//for store player's gold
-let current_gold = 0;
 
 let current_life = 5;
 let count_correctAnswer = 0;

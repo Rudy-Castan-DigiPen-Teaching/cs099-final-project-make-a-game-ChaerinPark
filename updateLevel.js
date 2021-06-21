@@ -141,6 +141,7 @@ function judgement()
         case Lv2:
         case Lv3:
         case Lv4:
+        {
             if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
             {
                 right_SFX.play();
@@ -149,6 +150,7 @@ function judgement()
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
             }    
+        } break;
     }
 }
 
