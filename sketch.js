@@ -71,18 +71,6 @@ function setup()
     createCanvas( 1200, 800 );
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
-    celestaC.setVolume(10);
-    celestaCs.setVolume(10);
-    celestaD.setVolume(10);
-    celestaDs.setVolume(10);
-    celestaE.setVolume(10);
-    celestaF.setVolume(10);
-    celestaFs.setVolume(10);
-    celestaG.setVolume(10);
-    celestaGs.setVolume(10);
-    celestaA.setVolume(10);
-    celestaAs.setVolume(10);
-    celestaB.setVolume(10);
     current_instrument = "PIANO";
 }
 
