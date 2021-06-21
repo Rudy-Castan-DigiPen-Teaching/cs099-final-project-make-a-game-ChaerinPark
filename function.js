@@ -66,14 +66,14 @@ function speechBubble(current_level)
     rectMode(CENTER);
     fill(255, 160);
     noStroke();
-    rect(400, 250, 700, 260);
+    rect(400, 200, 700, 360);
     triangle(750, 262, 812, 265, 750, 327);
     fill(180, 130, 130, 180);
     textSize(25);
     text(current_level, 700, 360);
     fill(180, 130, 130);
     textSize(40);
-    text("press the same key as her!", 350, 90);
+    text("press Enter to start!", 400, 90);
     pop();
 }
 

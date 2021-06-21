@@ -282,7 +282,30 @@ function keyPressed()
                     accordionAs.play();
                 }
             }
-            LEVEL.judgement();
+            judgement();
+
+            if(keyCode === ENTER)
+            {
+                switch (CurrentPage)
+                {
+                    case (Lv1):
+                    {
+                        updateLevel1();
+                    } break;
+                    case (Lv2):
+                    {
+                        updateLevel2();
+                    } break;
+                    case (Lv3):
+                    {
+                        updateLevel3();
+                    } break;
+                    case (Lv4):
+                    {
+                        updateLevel4();
+                    }
+                }
+            }
     }
 }
 
