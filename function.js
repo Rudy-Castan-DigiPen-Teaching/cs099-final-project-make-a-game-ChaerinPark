@@ -82,15 +82,22 @@ function playing_character()
     if(second()%2 == 0)
     {
         image(chara, 980, 220, 350, 350);
-    } else{
+    } else if(second()%2 == 1)
+    {
         image(chara_1, 980, 220, 350, 350);
     }
     if(wrong_SFX.isPlaying() === true)
     {
-        image(sad, 980, 220, 350, 350);
+        image(awkward, 980, 220, 350, 350);
     } else if(right_SFX.isPlaying() === true)
     {
         image(happy, 980, 220, 350, 350);
+    } else if(current_life == 0)
+    {
+        image(sad, 980, 220, 350, 350);
+    } else if(current_life>0 && count_correctAnswer == 10)
+    {
+        image(clear, 980, 220, 350, 350);
     }
 }
 
@@ -103,5 +110,21 @@ function explanation_box(x, y, width, height, about)
     fill(180, 100, 100);
     textSize(35);
     text(about, x + width/2, y + height/2);
+    pop();
+}
+
+function life(x, y)
+{
+    push();
+    stroke(255, 200, 200);
+    strokeWeight(5);
+    textSize(30);
+    fill(0);
+    text("LIFE", x+55, y-30);
+    fill('red');
+    for(let i = 0; i<current_life; i++)
+    {
+        text("♥", x + 30*i, y);
+    }
     pop();
 }

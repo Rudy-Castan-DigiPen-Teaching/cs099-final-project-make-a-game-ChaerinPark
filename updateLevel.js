@@ -129,18 +129,26 @@ function judgement()
         if(musicA.length === i+1 && musicQ[i] !== musicA[i])
         {
             wrong_SFX.play();
-            image(awkward, 980, 220, 350, 350);
             musicQ_sound.splice(0, musicQ_sound.length);
             musicQ.splice(0, musicQ.length);
             musicA.splice(0, musicA.length);
-        } else if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
-        {
-            right_SFX.play();
-            image(happy, 980, 220, 350, 350);
-            musicQ_sound.splice(0, musicQ_sound.length);
-            musicQ.splice(0, musicQ.length);
-            musicA.splice(0, musicA.length);
+            current_life--;
         }
+    }
+    switch(CurrentPage)
+    {
+        case Lv1:
+        case Lv2:
+        case Lv3:
+        case Lv4:
+            if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
+            {
+                right_SFX.play();
+                musicQ_sound.splice(0, musicQ_sound.length);
+                musicQ.splice(0, musicQ.length);
+                musicA.splice(0, musicA.length);
+                count_correctAnswer++;
+            }    
     }
 }
 

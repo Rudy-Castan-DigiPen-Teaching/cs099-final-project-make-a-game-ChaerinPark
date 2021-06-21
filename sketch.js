@@ -176,6 +176,7 @@ function draw()
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
                 player.draw_player_blackKey(205, height-380);
+                life(800, 110);
             } break;
 
         case(Lv2):
@@ -186,6 +187,7 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
+                life(800, 110);
             } break;
         case(Lv3):
             {
@@ -195,6 +197,7 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
+                life(800, 110);
             } break;
         case(Lv4):
             {
@@ -204,6 +207,7 @@ function draw()
                 player.draw_player_blackKey(205, height-380);
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
+                life(800, 110);
             } break;
 
 

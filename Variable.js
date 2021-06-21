@@ -102,3 +102,6 @@ let current_instrument;
 
 //for store player's gold
 let current_gold = 0;
+
+let current_life = 5;
+let count_correctAnswer = 0;
