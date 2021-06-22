@@ -100,7 +100,13 @@ let character;
 //for set sound to each level
 let current_instrument;
 
+//for count life and correct answer for judgement to clear of level
 let current_life = 5;
 let count_correctAnswer = 0;
 
+//for count number of clear & open next Level
 let clearLevel = [];
+let clearLv1 = 0;
+let clearLv2 = 0;
+let clearLv3 = 0;
+let clearLv4 = 0;

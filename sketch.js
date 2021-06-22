@@ -138,22 +138,22 @@ function draw()
                     && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
                 {
                     explanation_box(530, 130, explanation_box_width, explanation_box_height,
-                        "In Level 1, \n play three codes randomly. \n You can press the keys \n after look piano keys \n next to character. \n on these keys, \n write alphabets of keys.");
+                        "In Level 1, \n play three codes randomly. \n You can press the keys \n after look piano keys \n next to character. \n on these keys, \n write alphabets of keys. \n\n number of clear \n " + clearLv1);
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
                 {
                     explanation_box(530, 130, explanation_box_width, explanation_box_height,
-                        "In Level 2, \n play four codes randomly \n faster little bit \n than Level 1. \n You can also press \n like Level 1. \n Difference of \n Level 1 and Level 2 is \n not big.");
+                        "In Level 2, \n play four codes randomly \n faster little bit \n than Level 1. \n You can also press \n like Level 1. \n Difference of \n Level 1 and Level 2 is \n not big. \n\n number of clear \n " + clearLv2);
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                         && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
                 {
                     explanation_box(530, 130, explanation_box_width, explanation_box_height,
-                        "In level 3, \n play five code randomly. \n But now, \n no alphabet on keys so \n you should remember \n code to listen \n or position to see.");
+                        "In level 3, \n play five code randomly. \n But now, \n no alphabet on keys so \n you should remember \n code to listen \n or position to see. \n\n number of clear \n " + clearLv3);
                 } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
                 {
                     explanation_box(530, 130, explanation_box_width, explanation_box_height,
-                        "In Level 4, \n play four codes randomly \n faster than other Level. \n and no alphabets on the keys \n like Level 3. \n Most difficult level.");
+                        "In Level 4, \n play four codes randomly \n faster than other Level. \n and no alphabets on the keys \n like Level 3. \n Most difficult level. \n\n number of clear \n " + clearLv4);
                 }
             } break;
         
@@ -315,7 +315,6 @@ function mouseReleased()
                 click_SFX.play();
                 current_instrument = "ACCORDION";
             }
-            storeItem(current_instrument, current_instrument);
 
         } break;
         case (HowToPlay):

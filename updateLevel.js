@@ -148,6 +148,7 @@ function judgement()
                 count_correctAnswer++;
                 if(current_life>0 && count_correctAnswer == 10)
                 {
+                    clearLv1++;
                     clearLevel.push("clear1");
                 }
             }    
@@ -163,6 +164,7 @@ function judgement()
                 count_correctAnswer++;
                 if(current_life>0 && count_correctAnswer == 10)
                 {
+                    clearLv2++;
                     clearLevel.push("clear2");
                 }
             }    
@@ -179,6 +181,7 @@ function judgement()
                 count_correctAnswer++;
                 if(current_life>0 && count_correctAnswer == 10)
                 {
+                    clearLv3++;
                     clearLevel.push("clear3");
                 }
             }    
@@ -195,7 +198,8 @@ function judgement()
                 count_correctAnswer++;
                 if(current_life>0 && count_correctAnswer == 10)
                 {
-                    clearLevel.push("clear4");
+                    clearLv4++;
+                    clearLevel.push(clear4);
                 }
             }    
         } break;
