@@ -142,7 +142,7 @@ function judgement()
         case Lv3:
         case Lv4:
         {
-            if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1])
+            if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1] && musicQ.length > 0)
             {
                 right_SFX.play();
                 musicQ_sound.splice(0, musicQ_sound.length);

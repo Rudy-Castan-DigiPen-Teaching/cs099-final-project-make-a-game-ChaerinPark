@@ -61,10 +61,18 @@ class musicQuestion
         {
             rect(x + ((white_key_width*0.5)*6+1), y, (white_key_width*0.5), (white_key_height*0.5));
         }
-        for(let column=0; column < 7; column++)
+        switch(CurrentPage)
         {
-            fill(255);        
-            text(What_Key_W[column], x + ((white_key_width*0.5)*column+35), y + white_key_height*5/12);    
+            case Lv1:
+            case Lv2:
+                for(let column=0; column < 7; column++)
+                {
+                    fill(255);        
+                    text(What_Key_W[column], x + ((white_key_width*0.5)*column+35), y + white_key_height*5/12);    
+                } break;
+            case Lv3:
+            case Lv4:
+                break;        
         }
         pop();
     }
@@ -106,13 +114,21 @@ class musicQuestion
         rect(x + (((black_key_width + black_key_interval)*0.5)*5+1), y, (black_key_width*0.5), (black_key_height*0.5));    
         }
 
-        for(let column = 0; column < 6; column++)
+        switch(CurrentPage)
         {
-            if(column !== 2)
-            {
-                fill(255);
-                text(What_Key_B[column], x + (((black_key_width + black_key_interval)*0.5)*column+25), y + black_key_height*5/12);    
-            }
+            case Lv1:
+            case Lv2:
+                for(let column = 0; column < 6; column++)
+                {
+                    if(column !== 2)
+                    {
+                        fill(255);
+                        text(What_Key_B[column], x + (((black_key_width + black_key_interval)*0.5)*column+25), y + black_key_height*5/12);    
+                    }
+                } break;
+            case Lv3:
+            case Lv4:
+                break;        
         }
         pop();
     }
