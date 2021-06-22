@@ -138,8 +138,52 @@ function judgement()
     switch(CurrentPage)
     {
         case Lv1:
+        {
+            if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1] && musicQ.length > 0)
+            {
+                right_SFX.play();
+                musicQ_sound.splice(0, musicQ_sound.length);
+                musicQ.splice(0, musicQ.length);
+                musicA.splice(0, musicA.length);
+                count_correctAnswer++;
+                if(current_life>0 && count_correctAnswer == 10)
+                {
+                    clearLevel.push("clear1");
+                }
+            }    
+        } break;
         case Lv2:
+        {
+            if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1] && musicQ.length > 0)
+            {
+                right_SFX.play();
+                musicQ_sound.splice(0, musicQ_sound.length);
+                musicQ.splice(0, musicQ.length);
+                musicA.splice(0, musicA.length);
+                count_correctAnswer++;
+                if(current_life>0 && count_correctAnswer == 10)
+                {
+                    clearLevel.push("clear2");
+                }
+            }    
+        } break;
+
         case Lv3:
+        {
+            if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1] && musicQ.length > 0)
+            {
+                right_SFX.play();
+                musicQ_sound.splice(0, musicQ_sound.length);
+                musicQ.splice(0, musicQ.length);
+                musicA.splice(0, musicA.length);
+                count_correctAnswer++;
+                if(current_life>0 && count_correctAnswer == 10)
+                {
+                    clearLevel.push("clear3");
+                }
+            }    
+        } break;
+
         case Lv4:
         {
             if(musicA.length === musicQ.length && musicQ[musicQ.length-1] == musicA[musicA.length-1] && musicQ.length > 0)
@@ -149,6 +193,10 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
+                if(current_life>0 && count_correctAnswer == 10)
+                {
+                    clearLevel.push("clear4");
+                }
             }    
         } break;
     }

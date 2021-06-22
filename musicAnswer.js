@@ -290,18 +290,22 @@ function keyPressed()
                 {
                     case (Lv1):
                     {
+                        musicA.splice(0, musicA.length);
                         updateLevel1();
                     } break;
                     case (Lv2):
                     {
+                        musicA.splice(0, musicA.length);
                         updateLevel2();
                     } break;
                     case (Lv3):
                     {
+                        musicA.splice(0, musicA.length);
                         updateLevel3();
                     } break;
                     case (Lv4):
                     {
+                        musicA.splice(0, musicA.length);
                         updateLevel4();
                     }
                 }

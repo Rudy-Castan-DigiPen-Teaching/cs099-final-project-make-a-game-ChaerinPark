@@ -72,6 +72,7 @@ function setup()
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
     current_instrument = "PIANO";
+    count_correctAnswer = 0;
 }
 
 function draw()
@@ -88,6 +89,7 @@ function draw()
                 Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Option");
                 Button(width/2, height * 6/8, Main_button_width, Main_button_height, "How to Play");
                 Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Credit")
+                count_correctAnswer = 0;
             } break;
 
         case (Option):
@@ -172,6 +174,8 @@ function draw()
 
         case(Lv1):
             {
+                Button(width-50, 50, GoToMain_button, GoToMain_button);
+                HomeMark(width-50, 50);
                 speechBubble("Level 1");
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
@@ -183,6 +187,8 @@ function draw()
 
         case(Lv2):
             {
+                Button(width-50, 50, GoToMain_button, GoToMain_button);
+                HomeMark(width-50, 50);
                 speechBubble("Level 2");
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
@@ -193,6 +199,8 @@ function draw()
             } break;
         case(Lv3):
             {
+                Button(width-50, 50, GoToMain_button, GoToMain_button);
+                HomeMark(width-50, 50);
                 speechBubble("Level 3");
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
@@ -203,6 +211,8 @@ function draw()
             } break;
         case(Lv4):
             {
+                Button(width-50, 50, GoToMain_button, GoToMain_button);
+                HomeMark(width-50, 50);
                 speechBubble("Level 4");
                 playing_character();
                 player.draw_player_whiteKey(110, height-380);
@@ -219,9 +229,9 @@ function draw()
 
 function mouseReleased()
 {
-    switch(CurrentPage)
+    switch (CurrentPage)
     {
-        case(Main):     //setting buttons in Main page
+        case (Main):     //setting buttons in Main page
         {
             if(mouseX > width/2 - Main_button_width/2 && mouseX < width/2 + Main_button_width/2
                 && mouseY > height * 4/8 - Main_button_height/2 && mouseY < height * 4/8 + Main_button_height/2)
@@ -246,7 +256,7 @@ function mouseReleased()
             }
         } break;
 
-        case(Option):
+        case (Option):
         {
             let sample_piano = [pianoC, pianoD, pianoE, pianoF, pianoG];
             let sample_celesta = [celestaC, celestaD, celestaE, celestaF, celestaG];
@@ -308,8 +318,8 @@ function mouseReleased()
             storeItem(current_instrument, current_instrument);
 
         } break;
-        case(HowToPlay):
-        case(credit):
+        case (HowToPlay):
+        case (credit):
         {
             //go to main page
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
@@ -321,7 +331,7 @@ function mouseReleased()
         } break;
 
 
-        case(SelectLevel):
+        case (SelectLevel):
         {
             //go to main page
             if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
@@ -340,18 +350,50 @@ function mouseReleased()
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
                 click_SFX.play();
-                CurrentPage = Lv2;
+                for(let i = 0; i < clearLevel.length; i++)
+                {
+                    if(clearLevel[i] == "clear1")
+                    {
+                        CurrentPage = Lv2;
+                    }
+                }
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
                 click_SFX.play();
-                CurrentPage = Lv3;
+                for(let i = 0; i < clearLevel.length; i++)
+                {
+                    if(clearLevel[i] == "clear2")
+                    {
+                        CurrentPage = Lv3;
+                    }
+                }
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
                 click_SFX.play();
-                CurrentPage = Lv4;
+                for(let i = 0; i < clearLevel.length; i++)
+                {
+                    if(clearLevel[i] == "clear3")
+                    {
+                        CurrentPage = Lv4;
+                    }
+                }
             }
+        } break;
+
+        case (Lv1):
+        case (Lv2):
+        case (Lv3):
+        case (Lv4):
+        {
+            //go to main page
+            if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
+                && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
+                {
+                    click_SFX.play();
+                    CurrentPage = Main;
+                }
         } break;
     }
 

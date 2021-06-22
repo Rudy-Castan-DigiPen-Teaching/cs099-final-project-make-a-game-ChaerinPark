@@ -102,3 +102,5 @@ let current_instrument;
 
 let current_life = 5;
 let count_correctAnswer = 0;
+
+let clearLevel = [];
