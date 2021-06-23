@@ -33,7 +33,7 @@
  ### **Clap sound effect is from https://soundeffect-lab.info/**
   - clap.mp3
 
-![koukaonrabo](media/picture/koukaonrabo.png)
+![koukaonrabo](/media/picture/koukaonrabo.png)
 
 ```
 By downloading the audio file(MP3 format) of this site, you are deemed to have agreed to the following terms.
