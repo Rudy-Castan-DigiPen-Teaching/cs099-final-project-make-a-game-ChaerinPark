@@ -95,7 +95,7 @@ function playing_character()
     } else if(current_life == 0)
     {
         image(sad, 980, 220, 350, 350);
-    } else if(current_life>0 && count_correctAnswer == 10)
+    } else if(current_life>0 && count_correctAnswer % 10 == 0)
     {
         image(clear, 980, 220, 350, 350);
     }

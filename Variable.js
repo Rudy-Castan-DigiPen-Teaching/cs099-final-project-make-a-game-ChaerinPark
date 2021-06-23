@@ -58,6 +58,7 @@ let happy;
 let clear;
 let sad;
 let awkward;
+let gold;
 
 //pages
 const Main = 0;
@@ -100,12 +101,14 @@ let character;
 //for set sound to each level
 let current_instrument;
 
+let current_gold = 0;
+
 //for count life and correct answer for judgement to clear of level
 let current_life = 5;
 let count_correctAnswer = 0;
 
 //for count number of clear & open next Level
-let clearLevel = [];
+let clearLevel;
 let clearLv1 = 0;
 let clearLv2 = 0;
 let clearLv3 = 0;

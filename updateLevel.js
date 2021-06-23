@@ -146,10 +146,11 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
-                if(current_life>0 && count_correctAnswer == 10)
+                if(current_life>0 && count_correctAnswer % 10 == 0)
                 {
                     clearLv1++;
-                    clearLevel.push("clear1");
+                    clearLevel = "clear1";
+                    current_gold+=10;
                 }
             }    
         } break;
@@ -162,10 +163,11 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
-                if(current_life>0 && count_correctAnswer == 10)
+                if(current_life>0 && count_correctAnswer % 10 == 0)
                 {
                     clearLv2++;
-                    clearLevel.push("clear2");
+                    clearLevel = "clear2";
+                    current_gold+=10;
                 }
             }    
         } break;
@@ -179,10 +181,11 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
-                if(current_life>0 && count_correctAnswer == 10)
+                if(current_life>0 && count_correctAnswer % 10 == 0)
                 {
                     clearLv3++;
-                    clearLevel.push("clear3");
+                    clearLevel = "clear3";
+                    current_gold+=20;
                 }
             }    
         } break;
@@ -199,7 +202,7 @@ function judgement()
                 if(current_life>0 && count_correctAnswer == 10)
                 {
                     clearLv4++;
-                    clearLevel.push(clear4);
+                    current_gold+=30;
                 }
             }    
         } break;
