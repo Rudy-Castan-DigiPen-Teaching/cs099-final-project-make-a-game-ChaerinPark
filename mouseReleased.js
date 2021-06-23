@@ -152,40 +152,30 @@ function mouseReleased()
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
             {
                 click_SFX.play();
-                for(let i = 0; i < clearLevel.length; i++)
+                if(clearLevel == "clear1" || clearLevel == "clear2" || clearLevel == "clear3")
                 {
-                    if(clearLevel == "clear1" || clearLevel == "clear2" || clearLevel == "clear3")
-                    {
-                        CurrentPage = Lv2;
-                        BGM2.play();
-                        BGM2.loop();
-                    }
+                    CurrentPage = Lv2;
+                    BGM2.play();
+                    BGM2.loop();
                 }
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 4/7 +30 - Level_button_height/2 && mouseY < height * 4/7 +30 + Level_button_height/2)
             {
                 click_SFX.play();
-                for(let i = 0; i < clearLevel.length; i++)
+                if(clearLevel == "clear2" || clearLevel == "clear3")
                 {
-                    if(clearLevel == "clear2" || clearLevel == "clear3")
-                    {
-                        CurrentPage = Lv3;
-                        BGM2.play();
-                        BGM2.loop();
-                    }
+                    CurrentPage = Lv3;
+                    BGM2.play();
+                    BGM2.loop();
                 }
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                 && mouseY > height * 5/7 +40 - Level_button_height/2 && mouseY < height * 5/7 +40 + Level_button_height/2)
             {
                 click_SFX.play();
-                for(let i = 0; i < clearLevel.length; i++)
+                if(clearLevel == "clear3")
                 {
-                    if(clearLevel == "clear3")
-                    {
-                        CurrentPage = Lv4;
-                        BGM2.play();
-                        BGM2.loop();
-                    }
+                    CurrentPage = Lv4;
+                    BGM2.loop();
                 }
             }
         } break;
@@ -195,15 +185,15 @@ function mouseReleased()
         case (Lv3):
         case (Lv4):
         {
-            //go to main page
-            if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
-                && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
-                {
-                    click_SFX.play();
-                    CurrentPage = Main;
-                    BGM2.stop();
-                    BGM.play();
-                }
+        //go to main page
+        if(mouseX > width-50 - GoToMain_button/2 && mouseX < width-50 + GoToMain_button/2
+            && mouseY > 50 - GoToMain_button/2 && mouseY < 50 + GoToMain_button/2)
+            {
+                click_SFX.play();
+                CurrentPage = Main;
+                BGM2.stop();
+                BGM.play();
+            }
         } break;
     }
 }

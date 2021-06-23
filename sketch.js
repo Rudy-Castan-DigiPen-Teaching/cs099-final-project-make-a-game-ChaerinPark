@@ -94,6 +94,7 @@ function draw()
     {
         case (Main):
             {
+                BGM2.stop();
                 Button(width/2, height * 4/8, Main_button_width, Main_button_height, "START");
                 Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Shop");
                 Button(width/2, height * 6/8, Main_button_width, Main_button_height, "How to Play");
