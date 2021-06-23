@@ -77,7 +77,7 @@ function speechBubble(current_level)
     if(wrong_SFX.isPlaying() === true)
     {
         NOTICE = "It's wrong! \n Press Enter to next question";
-    } else if(right_SFX.isPlaying() === true)
+    } else if(right_SFX.isPlaying() === true && count_correctAnswer % 10 !== 0)
     {
         NOTICE = "Right! \n Press Enter to next question";
     } else if(keyCode === ENTER)
@@ -86,9 +86,10 @@ function speechBubble(current_level)
     } else if(current_life>0 && count_correctAnswer % 10 == 0 && count_correctAnswer !== 0)
     {
         NOTICE = "Level Clear! \n If you want continue, Press Enter";
+        count_correctAnswer = 0;
     } else if(current_life == 0)
     {
-        NOTICE = "YOU LOSE! \n If you want continue, Press Enter"
+        NOTICE = "YOU LOSE! \n If you want retry, Press Enter"
     }
     pop();
 }

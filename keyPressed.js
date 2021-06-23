@@ -181,21 +181,29 @@ function keyPressed()
                 {
                     case (Lv1):
                     {
+                        musicQ_sound.splice(0, musicQ_sound.length);
+                        musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel1();
                     } break;
                     case (Lv2):
                     {
+                        musicQ_sound.splice(0, musicQ_sound.length);
+                        musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel2();
                     } break;
                     case (Lv3):
                     {
+                        musicQ_sound.splice(0, musicQ_sound.length);
+                        musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel3();
                     } break;
                     case (Lv4):
                     {
+                        musicQ_sound.splice(0, musicQ_sound.length);
+                        musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel4();
                     }
