@@ -51,6 +51,8 @@ function mouseReleased()
             if(mouseX > width/6 - Shop_button_width/2 && mouseX < width/6 + Shop_button_width/2
                 && mouseY > height*2/3-20 - Shop_button_height*3/8 && mouseY < height*2/3-20 + Shop_button_height*3/8)
             {
+                BGM.pause();
+                BGM.play(2);
                 for(let i = 0; i < sample_piano.length; i++)
                 {
                     sample_piano[i].play(i/4);
@@ -59,6 +61,8 @@ function mouseReleased()
             if(mouseX > width/2 - Shop_button_width/2 && mouseX < width/2 + Shop_button_width/2
                 && mouseY > height*2/3-20 - Shop_button_height*3/8 && mouseY < height*2/3-20 + Shop_button_height*3/8)
             {
+                BGM.pause();
+                BGM.play(2);
                 for(let i = 0; i < sample_celesta.length; i++)
                 {
                     sample_celesta[i].play(i/4);
@@ -67,6 +71,8 @@ function mouseReleased()
             if(mouseX > width*5/6 - Shop_button_width/2 && mouseX < width*5/6 + Shop_button_width/2
                 && mouseY > height*2/3-20 - Shop_button_height*3/8 && mouseY < height*2/3-20 + Shop_button_height*3/8)
             {
+                BGM.pause();
+                BGM.play(2);
                 for(let i = 0; i < sample_piano.length; i++)
                 {
                     sample_accordion[i].play(i/4);

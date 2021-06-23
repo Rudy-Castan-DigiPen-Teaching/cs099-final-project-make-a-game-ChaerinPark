@@ -76,7 +76,6 @@ function setup()
     createCanvas( 1200, 800 );
     BGM.setVolume(0.4);
     BGM2.setVolume(0.15);
-    BGM.play();
     BGM.loop();
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
