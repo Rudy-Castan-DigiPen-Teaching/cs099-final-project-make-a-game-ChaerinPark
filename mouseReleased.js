@@ -35,6 +35,7 @@ function mouseReleased()
 
         case (Shop):
         {
+            //instruments' sample sound (codeC ~ code G)
             let sample_piano = [pianoC, pianoD, pianoE, pianoF, pianoG];
             let sample_celesta = [celestaC, celestaD, celestaE, celestaF, celestaG];
             let sample_accordion = [accordionC, accordionD, accordionE, accordionF, accordionG];
@@ -79,7 +80,7 @@ function mouseReleased()
                 }
             }
 
-            //select instrument
+            //buy and select instrument
             if(mouseX > width/6 - Shop_button_width/2 && mouseX < width/6 + Shop_button_width/2
                 && mouseY > height*2/3+50 - Shop_button_height*3/8 && mouseY < height*2/3+50 + Shop_button_height*3/8)
             {
@@ -90,7 +91,7 @@ function mouseReleased()
                 && mouseY > height*2/3+50 - Shop_button_height*3/8 && mouseY < height*2/3+50 + Shop_button_height*3/8)
             {
                 click_SFX.play();
-                if(current_gold >= 40)
+                if(current_gold >= 50)
                 {
                     if(buy_celesta === "Buy")
                     {
@@ -107,7 +108,7 @@ function mouseReleased()
                 && mouseY > height*2/3+50 - Shop_button_height*3/8 && mouseY < height*2/3+50 + Shop_button_height*3/8)
             {
                 click_SFX.play();
-                if(current_gold >= 40)
+                if(current_gold >= 50)
                 {
                     if(buy_accordion === "Buy")
                     {

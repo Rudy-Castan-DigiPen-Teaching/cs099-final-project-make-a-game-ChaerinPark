@@ -3,12 +3,15 @@
 // Course     : CS099
 // Spring 2021
 
-let musicQ_sound = [];
-let musicQ = [];
-let PianoCode = [];
-let CelestaCode = [];
-let AccordionCode = [];
 
+let musicQ_sound = [];      //to play question sound
+let musicQ = [];            //to record question and compare with player's answer(musicA array)
+let PianoCode = [];         //to play piano sound
+let CelestaCode = [];       //to play celesta sound
+let AccordionCode = [];     //to play accordion sound
+
+//draw character's keys
+//when play the question sound, color of keys are changed from white or black to hot pink
 class musicQuestion
 {
     constructor(x, y)

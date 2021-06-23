@@ -4,9 +4,10 @@
 // Spring 2021
 
 
-let musicA = [];
+let musicA = [];    //an array for judgement players' answer
 
-//play keyboard sound and play next question
+//play keyboard sound and push answer in musicA array
+//and play next question(<<Enter key)
 function keyPressed()
 {
     switch(CurrentPage)

@@ -4,6 +4,7 @@
 // Spring 2021
 
 
+//for effect when player clear one stage
 class Particle
 {
     constructor(center_x, center_y, acc = 0)
@@ -18,19 +19,16 @@ class Particle
         this.accel = acc;
     }
 
-
     accelerate()
     {
         this.velocity.addTo(this.accel);
     }
-
 
     update()
     {
         this.velocity.addTo(this.gravity);
         this.position.addTo(this.velocity);
     }
-
 
     draw()
     {

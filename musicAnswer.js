@@ -4,6 +4,8 @@
 // Spring 2021
 
 
+//draw player's keys
+//when key is pressed, color of key is changed from white or black to hot pink.
 class musicAnswer
 {
     constructor(x, y)

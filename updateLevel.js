@@ -3,6 +3,8 @@
 // Course     : CS099
 // Spring 2021
 
+
+//level1 | play 3 codes randomly
 function updateLevel1()
 {
     if(current_instrument === "PIANO")
@@ -26,6 +28,7 @@ function updateLevel1()
 }
 
 
+//level1 | play 4 codes randomly
 function updateLevel2()
 {
     if(current_instrument === "PIANO")
@@ -52,6 +55,7 @@ function updateLevel2()
 }
 
 
+//level1 | play 5 codes randomly
 function updateLevel3()
 {
     if(current_instrument === "PIANO")
@@ -81,6 +85,7 @@ function updateLevel3()
 }
 
 
+//level1 | play 6 codes randomly
 function updateLevel4()
 {
     if(current_instrument === "PIANO")
@@ -112,7 +117,7 @@ function updateLevel4()
     make_musicQ_array();   
 }
 
-
+//play question
 function musicQ_play(speed)
 {
     for(let i=0; i< musicQ_sound.length; i++)
@@ -121,7 +126,7 @@ function musicQ_play(speed)
     }
 }
 
-
+//compare musicQ and musicA and judgement
 function judgement()
 {
     for(let i = 0; i < musicQ.length; i++)
@@ -149,7 +154,7 @@ function judgement()
                 if(current_life>0 && count_correctAnswer % 10 == 0)
                 {
                     clearLv1++;
-                    clearLevel = "clear1";
+                    clearLevel = "clear1";  //to open Level 2
                     current_gold+=10;
                     clap_SFX.play();
                 }
@@ -167,7 +172,7 @@ function judgement()
                 if(current_life>0 && count_correctAnswer % 10 == 0)
                 {
                     clearLv2++;
-                    clearLevel = "clear2";
+                    clearLevel = "clear2";  //to open Level 3
                     current_gold+=10;
                     clap_SFX.play();
                 }
@@ -186,7 +191,7 @@ function judgement()
                 if(current_life>0 && count_correctAnswer % 10 == 0)
                 {
                     clearLv3++;
-                    clearLevel = "clear3";
+                    clearLevel = "clear3";  //to open Level 4
                     current_gold+=20;
                     clap_SFX.play();
                 }
@@ -213,7 +218,7 @@ function judgement()
     }
 }
 
-
+//make musicQ array to compare with player's answer
 function make_musicQ_array()
 {
     for(let i=0; i< musicQ_sound.length; i++)

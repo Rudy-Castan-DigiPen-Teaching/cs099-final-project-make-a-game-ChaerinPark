@@ -90,5 +90,4 @@ class Vec2
         this.x /= scalar;
         this.y /= scalar;
     }
-
 }
