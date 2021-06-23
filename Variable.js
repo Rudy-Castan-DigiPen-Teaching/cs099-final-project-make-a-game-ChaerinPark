@@ -90,6 +90,8 @@ const black_key_width = 90;
 const black_key_height = 225;
 const black_key_interval = 50;
 
+let NOTICE = "Press Enter to start!";
+
 //alphabets of key
 let What_Key_B = ["S", "D", "", "G", "H", "J"]
 let What_Key_W = ["Z", "X", "C", "V", "B", "N", "M"];
@@ -103,6 +105,7 @@ let current_instrument;
 let buy_celesta = "Buy";
 let buy_accordion = "Buy";
 
+//gold
 let current_gold = 0;
 
 //for count life and correct answer for judgement to clear of level

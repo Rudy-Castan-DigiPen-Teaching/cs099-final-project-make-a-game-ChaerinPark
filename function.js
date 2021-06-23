@@ -73,7 +73,23 @@ function speechBubble(current_level)
     text(current_level, 700, 360);
     fill(180, 130, 130);
     textSize(40);
-    text("press Enter to start!", 400, 90);
+    text(NOTICE, 400, 90);
+    if(wrong_SFX.isPlaying() === true)
+    {
+        NOTICE = "It's wrong! \n Press Enter to next question";
+    } else if(right_SFX.isPlaying() === true)
+    {
+        NOTICE = "Right! \n Press Enter to next question";
+    } else if(keyCode === ENTER)
+    {
+        NOTICE = "♬";
+    } else if(current_life>0 && count_correctAnswer % 10 == 0 && count_correctAnswer !== 0)
+    {
+        NOTICE = "Level Clear! \n If you want continue, Press Enter";
+    } else if(current_life == 0)
+    {
+        NOTICE = "YOU LOSE! \n If you want continue, Press Enter"
+    }
     pop();
 }
 
@@ -95,7 +111,7 @@ function playing_character()
     } else if(current_life == 0)
     {
         image(sad, 980, 220, 350, 350);
-    } else if(current_life>0 && count_correctAnswer % 10 == 0)
+    } else if(current_life>0 && count_correctAnswer % 10 == 0 && count_correctAnswer !== 0)
     {
         image(clear, 980, 220, 350, 350);
     }
