@@ -89,6 +89,21 @@ function draw()
     textAlign(CENTER, CENTER);
     imageMode(CENTER);
 
+    for(let Particle of particleStar)
+    {
+        Particle.update();
+        Particle.draw();
+    }
+
+    for(let i = particleStar.length-1; i>=0; --i)
+    {
+        let particle = particleStar[i];
+        if(particle.position.x > width || particle.position.x<0 || particle.position.y > height)
+        {
+            particleStar.splice(i, 1);
+        }
+    }
+
     switch(CurrentPage)
     {
         case (Main):
@@ -196,6 +211,7 @@ function draw()
                 player.draw_player_whiteKey(110, height-380);
                 player.draw_player_blackKey(205, height-380);
                 life(800, 110);
+                star_particle_effect(1000, 130);
             } break;
 
         case(Lv2):
@@ -210,6 +226,7 @@ function draw()
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
                 life(800, 110);
+                star_particle_effect(1000, 130);
             } break;
         case(Lv3):
             {
@@ -223,6 +240,7 @@ function draw()
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
                 life(800, 110);
+                star_particle_effect(1000, 130);
             } break;
         case(Lv4):
             {
@@ -236,6 +254,7 @@ function draw()
                 character.draw_character_whiteKey(140, 160);
                 character.draw_character_blackKey(185, 160);
                 life(800, 110);
+                star_particle_effect(1000, 130);
             } break;
     }
 }

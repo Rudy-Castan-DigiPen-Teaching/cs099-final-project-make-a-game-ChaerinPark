@@ -86,7 +86,6 @@ function speechBubble(current_level)
     } else if(current_life>0 && count_correctAnswer % 10 == 0 && count_correctAnswer !== 0)
     {
         NOTICE = "Level Clear! \n If you want continue, Press Enter";
-        count_correctAnswer = 0;
     } else if(current_life == 0)
     {
         NOTICE = "YOU LOSE! \n If you want retry, Press Enter"
@@ -144,4 +143,16 @@ function life(x, y)
         text("♥", x + 30*i, y);
     }
     pop();
+}
+
+
+function star_particle_effect(x, y)
+{
+    if(clap_SFX.isPlaying())
+    {
+        for(let i = 0; i<star_number; ++i)
+        {
+            particleStar.push(new Particle(x, y));
+        }
+    }
 }

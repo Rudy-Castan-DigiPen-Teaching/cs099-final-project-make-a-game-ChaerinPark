@@ -140,6 +140,7 @@ function judgement()
             current_life--;
         }
     }
+
     switch(CurrentPage)
     {
         case Lv1:
@@ -151,7 +152,7 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
-                if(current_life>0 && count_correctAnswer % 10 == 0)
+                if(current_life>0 && count_correctAnswer == 10)
                 {
                     clearLv1++;
                     clearLevel = "clear1";  //to open Level 2
@@ -169,7 +170,7 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
-                if(current_life>0 && count_correctAnswer % 10 == 0)
+                if(current_life>0 && count_correctAnswer == 10)
                 {
                     clearLv2++;
                     clearLevel = "clear2";  //to open Level 3
@@ -188,7 +189,7 @@ function judgement()
                 musicQ.splice(0, musicQ.length);
                 musicA.splice(0, musicA.length);
                 count_correctAnswer++;
-                if(current_life>0 && count_correctAnswer % 10 == 0)
+                if(current_life>0 && count_correctAnswer == 10)
                 {
                     clearLv3++;
                     clearLevel = "clear3";  //to open Level 4

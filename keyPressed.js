@@ -185,6 +185,10 @@ function keyPressed()
                         musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel1();
+                        if(count_correctAnswer == 10)
+                        {
+                            count_correctAnswer = 0;
+                        }
                     } break;
                     case (Lv2):
                     {
@@ -192,6 +196,10 @@ function keyPressed()
                         musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel2();
+                        if(count_correctAnswer == 10)
+                        {
+                            count_correctAnswer = 0;
+                        }
                     } break;
                     case (Lv3):
                     {
@@ -199,6 +207,10 @@ function keyPressed()
                         musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel3();
+                        if(count_correctAnswer == 10)
+                        {
+                            count_correctAnswer = 0;
+                        }
                     } break;
                     case (Lv4):
                     {
@@ -206,6 +218,10 @@ function keyPressed()
                         musicQ.splice(0, musicQ.length);
                         musicA.splice(0, musicA.length);
                         updateLevel4();
+                        if(count_correctAnswer == 10)
+                        {
+                            count_correctAnswer = 0;
+                        }
                     }
                 }
             }

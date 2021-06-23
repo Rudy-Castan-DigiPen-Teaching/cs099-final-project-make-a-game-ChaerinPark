@@ -122,3 +122,7 @@ let clearLv1 = 0;
 let clearLv2 = 0;
 let clearLv3 = 0;
 let clearLv4 = 0;
+
+//particle effect
+let particleStar = [];
+const star_number = 5;

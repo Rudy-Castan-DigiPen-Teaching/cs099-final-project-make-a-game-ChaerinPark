@@ -7,7 +7,7 @@
 //for effect when player clear one stage
 class Particle
 {
-    constructor(center_x, center_y, acc = 0)
+    constructor(center_x, center_y)
     {
         this.position = new Vec2(center_x, center_y);
         this.velocity = new Vec2(1, 0);
@@ -16,12 +16,6 @@ class Particle
         this.velocity.setLength(speed);
         this.velocity.setAngle(direction);
         this.gravity = new Vec2(0, 0.3);
-        this.accel = acc;
-    }
-
-    accelerate()
-    {
-        this.velocity.addTo(this.accel);
     }
 
     update()
@@ -32,8 +26,10 @@ class Particle
 
     draw()
     {
+        const G = random(0, 100);
+        const B = random(0, 100);
         noStroke();
-        fill(255, 255, 200);
+        fill(255, G+155, B+155);
         beginShape();
         vertex(this.position.x - 8, this.position.y - 3);
         vertex(this.position.x + 8, this.position.y - 3);
