@@ -151,6 +151,7 @@ function judgement()
                     clearLv1++;
                     clearLevel = "clear1";
                     current_gold+=10;
+                    clap_SFX.play();
                 }
             }    
         } break;
@@ -168,6 +169,7 @@ function judgement()
                     clearLv2++;
                     clearLevel = "clear2";
                     current_gold+=10;
+                    clap_SFX.play();
                 }
             }    
         } break;
@@ -186,6 +188,7 @@ function judgement()
                     clearLv3++;
                     clearLevel = "clear3";
                     current_gold+=20;
+                    clap_SFX.play();
                 }
             }    
         } break;
@@ -203,6 +206,7 @@ function judgement()
                 {
                     clearLv4++;
                     current_gold+=30;
+                    clap_SFX.play();
                 }
             }    
         } break;

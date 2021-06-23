@@ -6,10 +6,14 @@
 
 function preload()
 {
+    //background music
+    BGM = loadSound('media/sound/BGM.mp3');
+
     //sound effects
     click_SFX = loadSound('media/sound/SFX/click.wav');
     right_SFX = loadSound('media/sound/SFX/right.wav');
     wrong_SFX = loadSound('media/sound/SFX/wrong.wav');
+    clap_SFX = loadSound('media/sound/SFX/clap.mp3');
 
     //piano
     pianoC = loadSound('media/sound/piano/pianoC.mp3');
@@ -69,6 +73,9 @@ function preload()
 function setup()
 {
     createCanvas( 1200, 800 );
+    BGM.setVolume(0.4);
+    BGM.play();
+    BGM.loop();
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);
     current_instrument = "PIANO";
@@ -176,6 +183,7 @@ function draw()
 
         case(Lv1):
             {
+                BGM.stop();
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
                 speechBubble("Level 1");
@@ -189,6 +197,7 @@ function draw()
 
         case(Lv2):
             {
+                BGM.stop();
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
                 speechBubble("Level 2");
@@ -201,6 +210,7 @@ function draw()
             } break;
         case(Lv3):
             {
+                BGM.stop();
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
                 speechBubble("Level 3");
@@ -213,6 +223,7 @@ function draw()
             } break;
         case(Lv4):
             {
+                BGM.stop();
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
                 speechBubble("Level 4");
@@ -412,6 +423,7 @@ function mouseReleased()
                 {
                     click_SFX.play();
                     CurrentPage = Main;
+                    BGM.play();
                 }
         } break;
     }

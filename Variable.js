@@ -4,6 +4,9 @@
 // Spring 2021
 
 
+//background music
+let BGM;
+
 //SFX
 let click_SFX;
 let right_SFX;

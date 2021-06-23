@@ -12,10 +12,51 @@
  - illust_celesta.png
 
 
+ ### **Background music is from https://www.sellbuymusic.com/**
+  - BGM.mp3
+ ```
+ 
+✔ 차이코프스키 - 어린이를 위한 앨범 5번 군대행진곡_2 by SellBuyMusic
+🎧 Download / Stream 
+- https://www.sellbuymusic.com/musicDetail/8689
+
+- You can use it freely for school purposes.
+ ```
+
+
 ### **These sound effect are made by me, Chaerin Park, with _sfxr_.**
  - click.wav
  - right.mav
  - wrong.wav
+
+
+ ### **Clap sound effect is from https://soundeffect-lab.info/**
+  - clap.mp3
+
+![koukaonrabo](media/picture/koukaonrabo.png)
+
+```
+By downloading the audio file(MP3 format) of this site, you are deemed to have agreed to the following terms.
+Terms are subject to change without notice.
+
+Terms
+ - No reports, links, or credits required for use (optional, not prohibited).
+ - Prohibition of use for adult works, works that are offensive to public order and morals,
+   and illegal acts.
+ - It is also prohibited to use only voice material for works.
+   with homosexual expression in addition to the above.
+ - Can be used free of charge by individuals and corporations.
+ - Redistribute prohibited * Redistribution permission is also available for a free.
+   For more information contact us please.
+ - It is okay to modify and use the sound effects,
+   but it is prohibited to redistribute the modified ones.
+ - Regarding voice material, it is prohibited to use damage the dignity
+   of the voice actor or damage the voice actor.
+ - When incorporating it into a song, it is prohibited to register the content ID on YouTube.
+   * Because all other YouTube users will not be able to use the sound effect material on YouTube.
+ - The sound effect lab administrator is not responsible for any trouble caused
+   by using sound effects.
+```
 
  
 ### **These sound effect are made by me, Chaerin Park, with my keyboard piano.**
