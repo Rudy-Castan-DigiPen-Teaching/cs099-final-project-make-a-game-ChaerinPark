@@ -6,6 +6,7 @@
 
 //background music
 let BGM;
+let BGM2;
 
 //SFX
 let click_SFX;

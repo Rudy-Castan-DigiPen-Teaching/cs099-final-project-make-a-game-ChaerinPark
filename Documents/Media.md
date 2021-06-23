@@ -1,3 +1,5 @@
+## **Pictures**
+
 ### **All images are drawn by me, Chaerin Park.**
 
  - chara1.png
@@ -12,10 +14,13 @@
  - illust_celesta.png
 
 
- ### **Background music is from https://www.sellbuymusic.com/**
+---
+
+## **Sound Files**
+
+### **Background music is from https://www.sellbuymusic.com/**
   - BGM.mp3
  ```
- 
 ✔ 차이코프스키 - 어린이를 위한 앨범 5번 군대행진곡_2 by SellBuyMusic
 🎧 Download / Stream 
 - https://www.sellbuymusic.com/musicDetail/8689
@@ -23,6 +28,19 @@
 - You can use it freely for school purposes.
  ```
 
+
+### **Stage background music is from https://www.bensound.com/**
+ - BGM2.mp3
+```
+You can use Bensound's music available under the Free License (with the black download button) in your multimedia project (online videos, websites, animations, etc.) for free as long as you credit Bensound.com. Examples of a proper way to credit us: "Music: https://www.bensound.com/royalty-free-music or "Music: « Song Title » from Bensound.com"
+
+You cannot:
+ - You cannot Claim our music as your own.
+ - You cannot Register our music in any store/platform.
+ - You cannot use our music for Audio Podcasts or AudioBooks.
+ - You cannot make music, song, or remix with our music.
+ - You can use our music for Facebook videos but you cannot register them to the Facebook Rights Manager Service (that will keep other users from using our music).
+```
 
 ### **These sound effect are made by me, Chaerin Park, with _sfxr_.**
  - click.wav
