@@ -69,8 +69,8 @@ let grandPiano;
 let celesta;
 let accordion;
 let title;
-let EX1;
-let EX2;
+let HowToPlay_image;
+let credit_image;
 
 //pages
 const Main = 0;

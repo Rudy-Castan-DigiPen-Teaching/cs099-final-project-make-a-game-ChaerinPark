@@ -70,6 +70,7 @@ function preload()
     grandPiano = loadImage('media/picture/game/illust_piano.png');
     accordion = loadImage('media/picture/game/illust_accordion.png');
     celesta = loadImage('media/picture/game/illust_celesta.png');
+    HowToPlay_image = loadImage('media/picture/game/HowToPlay.png');
 }
 
 function setup()
@@ -191,7 +192,7 @@ function draw()
         
         case (HowToPlay):
             {
-                text("How to play page", width/2, height/2);
+                image(HowToPlay_image, width/2, height/2);
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
 

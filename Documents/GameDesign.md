@@ -81,7 +81,7 @@ You can buy celesta and accordion sound by 50 golds. After bought, you can selec
 ### How to Play
     Press the How to Play button, go to explain page.
 
-There is explanation about game play like this markdown file.
+There is explanation about game play simply like this markdown file.
 
 
 ### Credit
