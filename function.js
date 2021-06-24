@@ -80,9 +80,12 @@ function speechBubble(current_level)
     } else if(right_SFX.isPlaying() === true && count_correctAnswer % 10 !== 0)
     {
         NOTICE = "Right! \n Press Enter to next question";
-    } else if(keyCode === ENTER)
+    } else if(keyIsPressed === true)
     {
-        NOTICE = "♬";
+        if(keyCode === ENTER)
+        {
+            NOTICE = "♬";
+        }    
     } else if(current_life>0 && count_correctAnswer % 10 == 0 && count_correctAnswer !== 0)
     {
         NOTICE = "Level Clear! \n If you want continue, Press Enter";

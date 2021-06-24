@@ -285,7 +285,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
 ```
 
-- function speechBubble (function.js | line 77~92)
+- function speechBubble (function.js | line 77~95)
 ```
     If you press the key, text in speech bubble changed.
     (3. Variables - NOTICE)
@@ -299,7 +299,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
 ```
 
-- function playing_character (function.js | line 98~117)
+- function playing_character (function.js | line 101~120)
 ```
     character's arm is moving every time.
     And character's face changes depending on the your answer.
@@ -316,7 +316,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
 ```
 
-- function star_particle_effect (function.js | line 151~157)
+- function star_particle_effect (function.js | line 154~160)
 ```
     If you clear level, star particles are drawn.
 ```
@@ -570,13 +570,13 @@ I used only for loop.
     It drawn on the button.
  ```
 
- - speechBubble (function.js | line 63~94)
+ - speechBubble (function.js | line 63~97)
  ```
     It is a function to draw speech bubble and texts in that each level.
     It drawn under the character's keyboard.
  ```
 
- - playing_character (function.js | line 96~118)
+ - playing_character (function.js | line 99~121)
  ```
     Character's arms are move once a second, like playing instrument.
     And the face changes depending on the result.
@@ -584,20 +584,20 @@ I used only for loop.
     and in order to provide visual familiarity.
  ```
 
- - explanation_box (function.js | line 120~130)
+ - explanation_box (function.js | line 123~133)
  ```
     In SelectLevel page, if your mouse curser is on the level button,
     explanation box is drawn.
     Because the descriptions vary each level, so added the parameter about text.
  ```
 
- - life (function.js | line 132~146)
+ - life (function.js | line 135~149)
  ```
     It draw life you have as heart shape.
     If you press wrong code, life is decrease 1.
  ```
 
- - star_particle_effect (function.js | line 149~158)
+ - star_particle_effect (function.js | line 152~161)
  ```
     If you clear level, particles of star shape are drawn.
     The color of particles is random(red, white, pink, yellow, pastel purple...)
