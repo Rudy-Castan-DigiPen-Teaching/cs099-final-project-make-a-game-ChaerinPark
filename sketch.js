@@ -117,7 +117,7 @@ function draw()
                 Button(width/2, height * 4/8, Main_button_width, Main_button_height, "START");
                 Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Shop");
                 Button(width/2, height * 6/8, Main_button_width, Main_button_height, "How to Play");
-                Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Setting / Credit");
+                Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Credit");
                 count_correctAnswer = 0;
                 NOTICE = "Press Enter to start!";
             } break;

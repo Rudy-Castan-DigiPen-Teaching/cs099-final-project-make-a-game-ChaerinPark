@@ -84,11 +84,7 @@ You can buy celesta and accordion sound by 50 golds. After bought, you can selec
 There is explanation about game play like this markdown file.
 
 
-### Setting / Credit
-    Press the Setting / Credit button, the setting box of sound and credit are appear.
-
-You can control loudness level of BGM, SFX, and instrument sound.
-
-You can off BGM, SFX. But can't instrument sound.
+###Credit
+    Press Credit button, the credit are appear.
 
 And all audio files and image files' creator is written.
