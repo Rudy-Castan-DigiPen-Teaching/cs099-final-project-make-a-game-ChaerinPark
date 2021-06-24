@@ -153,7 +153,6 @@ function mouseReleased()
             {
                 click_SFX.play();
                 CurrentPage = Lv1;
-                BGM2.play();
                 BGM2.loop();
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
             && mouseY > height * 3/7 +20 - Level_button_height/2 && mouseY < height * 3/7 +20 + Level_button_height/2)
@@ -162,7 +161,6 @@ function mouseReleased()
                 if(clearLevel == "clear1" || clearLevel == "clear2" || clearLevel == "clear3")
                 {
                     CurrentPage = Lv2;
-                    BGM2.play();
                     BGM2.loop();
                 }
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
@@ -172,7 +170,6 @@ function mouseReleased()
                 if(clearLevel == "clear2" || clearLevel == "clear3")
                 {
                     CurrentPage = Lv3;
-                    BGM2.play();
                     BGM2.loop();
                 }
             } else if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2

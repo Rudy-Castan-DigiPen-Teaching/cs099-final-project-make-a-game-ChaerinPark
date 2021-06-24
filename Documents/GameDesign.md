@@ -44,7 +44,7 @@ In main page, there are 4 buttons and title of game.
   - Start
   - Shop
   - How to Play
-  - Setting / Credit
+  - Credit
 
 ### Start
     Press the Start button, 4 buttons are appear. that are Level of game.
@@ -84,7 +84,7 @@ You can buy celesta and accordion sound by 50 golds. After bought, you can selec
 There is explanation about game play like this markdown file.
 
 
-###Credit
+### Credit
     Press Credit button, the credit are appear.
 
 And all audio files and image files' creator is written.

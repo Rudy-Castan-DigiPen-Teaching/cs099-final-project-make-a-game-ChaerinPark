@@ -180,7 +180,7 @@ function keyPressed()
                 if(current_life == 0)
                 {
                     current_life = 5;
-                    BGM2.play();
+                    BGM2.loop();
                 }
                 switch (CurrentPage)
                 {
