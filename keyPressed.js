@@ -112,7 +112,7 @@ function keyPressed()
                 musicA.push("codeCs");
                 if(current_instrument === "PIANO")
                 {
-                    pianoCs.play()
+                    pianoCs.play();
                 } else if(current_instrument === "CELESTA")
                 {
                     celestaCs.play();
@@ -125,7 +125,7 @@ function keyPressed()
                 musicA.push("codeDs");
                 if(current_instrument === "PIANO")
                 {
-                    pianoDs.play()
+                    pianoDs.play();
                 } else if(current_instrument === "CELESTA")
                 {
                     celestaDs.play();
@@ -138,7 +138,7 @@ function keyPressed()
                 musicA.push("codeFs");
                 if(current_instrument === "PIANO")
                 {
-                    pianoFs.play()
+                    pianoFs.play();
                 } else if(current_instrument === "CELESTA")
                 {
                     celestaFs.play();
@@ -151,7 +151,7 @@ function keyPressed()
                 musicA.push("codeGs");
                 if(current_instrument === "PIANO")
                 {
-                    pianoGs.play()
+                    pianoGs.play();
                 } else if(current_instrument === "CELESTA")
                 {
                     celestaGs.play();
@@ -164,7 +164,7 @@ function keyPressed()
                 musicA.push("codeAs");
                 if(current_instrument === "PIANO")
                 {
-                    pianoAs.play()
+                    pianoAs.play();
                 } else if(current_instrument === "CELESTA")
                 {
                     celestaAs.play();
@@ -227,4 +227,3 @@ function keyPressed()
             }
     }
 }
-

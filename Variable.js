@@ -12,6 +12,7 @@ let BGM2;
 let click_SFX;
 let right_SFX;
 let wrong_SFX;
+let clap_SFX;
 
 //piano sound
 let pianoC;
@@ -63,6 +64,12 @@ let clear;
 let sad;
 let awkward;
 let gold;
+let grandPiano;
+let celesta;
+let accordion;
+let title;
+let EX1;
+let EX2;
 
 //pages
 const Main = 0;
@@ -97,7 +104,7 @@ const black_key_interval = 50;
 let NOTICE = "Press Enter to start!";
 
 //alphabets of key
-let What_Key_B = ["S", "D", "", "G", "H", "J"]
+let What_Key_B = ["S", "D", "", "G", "H", "J"];
 let What_Key_W = ["Z", "X", "C", "V", "B", "N", "M"];
 
 //create new class

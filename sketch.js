@@ -59,16 +59,16 @@ function preload()
     accordionB = loadSound('media/sound/accordion/accordionB.mp3');    
 
     //pictures
-    chara = loadImage('media/picture/chara1.png');
-    chara_1 = loadImage('media/picture/chara1-1.png');
-    happy = loadImage('media/picture/chara_happy.png');
-    clear = loadImage('media/picture/chara_clear.png');
-    sad = loadImage('media/picture/chara_sad.png');
-    awkward = loadImage('media/picture/chara_awkward.png');
-    gold = loadImage('media/picture/gold.png');
-    grandPiano = loadImage('media/picture/illust_piano.png');
-    accordion = loadImage('media/picture/illust_accordion.png');
-    celesta = loadImage('media/picture/illust_celesta.png');
+    chara = loadImage('media/picture/game/chara1.png');
+    chara_1 = loadImage('media/picture/game/chara1-1.png');
+    happy = loadImage('media/picture/game/chara_happy.png');
+    clear = loadImage('media/picture/game/chara_clear.png');
+    sad = loadImage('media/picture/game/chara_sad.png');
+    awkward = loadImage('media/picture/game/chara_awkward.png');
+    gold = loadImage('media/picture/game/gold.png');
+    grandPiano = loadImage('media/picture/game/illust_piano.png');
+    accordion = loadImage('media/picture/game/illust_accordion.png');
+    celesta = loadImage('media/picture/game/illust_celesta.png');
 }
 
 function setup()
@@ -112,7 +112,7 @@ function draw()
                 Button(width/2, height * 4/8, Main_button_width, Main_button_height, "START");
                 Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Shop");
                 Button(width/2, height * 6/8, Main_button_width, Main_button_height, "How to Play");
-                Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Credit")
+                Button(width/2, height * 7/8, Main_button_width, Main_button_height, "Setting / Credit");
                 count_correctAnswer = 0;
                 NOTICE = "Press Enter to start!";
             } break;

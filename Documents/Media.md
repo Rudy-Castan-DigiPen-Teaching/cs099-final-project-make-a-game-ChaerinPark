@@ -22,6 +22,7 @@
   - BGM.mp3
  ```
 ✔ 차이코프스키 - 어린이를 위한 앨범 5번 군대행진곡_2 by SellBuyMusic
+  (Tchaikovsky - The Album for children No.5 Military march song_2)
 🎧 Download / Stream 
 - https://www.sellbuymusic.com/musicDetail/8689
 
@@ -48,7 +49,7 @@ You cannot:
  - wrong.wav
 
 
- ### **Clap sound effect is from https://soundeffect-lab.info/**
+### **Clap sound effect is from https://soundeffect-lab.info/**
   - clap.mp3
 
 ![koukaonrabo](/media/picture/koukaonrabo.png)

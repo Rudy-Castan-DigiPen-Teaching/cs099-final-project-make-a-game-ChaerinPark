@@ -19,8 +19,8 @@ class musicQuestion
         this.x = x;
         this.y = y;
         PianoCode = [pianoC, pianoCs, pianoD, pianoDs, pianoE, pianoF, pianoFs, pianoG, pianoGs, pianoA, pianoAs, pianoB];
-        CelestaCode = [celestaC, celestaCs, celestaD, celestaDs, celestaE, celestaF, celestaFs, celestaG, celestaGs, celestaA, celestaAs, celestaB]
-        AccordionCode = [accordionC, accordionCs, accordionD, accordionDs, accordionE, accordionF, accordionFs, accordionG, accordionGs, accordionA, accordionAs, accordionB]
+        CelestaCode = [celestaC, celestaCs, celestaD, celestaDs, celestaE, celestaF, celestaFs, celestaG, celestaGs, celestaA, celestaAs, celestaB];
+        AccordionCode = [accordionC, accordionCs, accordionD, accordionDs, accordionE, accordionF, accordionFs, accordionG, accordionGs, accordionA, accordionAs, accordionB];
     }
 
     draw_character_whiteKey(x, y)

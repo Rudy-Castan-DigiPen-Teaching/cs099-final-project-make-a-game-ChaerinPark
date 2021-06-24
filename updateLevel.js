@@ -113,7 +113,7 @@ function updateLevel4()
         musicQ_sound.push(random(AccordionCode));
         musicQ_sound.push(random(AccordionCode));
     }
-    musicQ_play(0.5);
+    musicQ_play(0.65);
     make_musicQ_array();   
 }
 

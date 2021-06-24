@@ -84,11 +84,11 @@ For example, if a student had the login name fun.frank then the appropriate file
 - [ ] The zip file submitted can be extracted and the sketch runs in Chrome with a local web server.
 - [ ] Published the project on GitHub.
 - [ ] Properly documented media files in a `Media.md`.
-- [ ] **All** Source Code has a proper header comment: Name, Project Name, Course Number, Term & Year. 
+- [x] **All** Source Code has a proper header comment: Name, Project Name, Course Number, Term & Year. 
 - [ ] Properly named zip file.
 - [ ] Game Design Document
-- [ ] [**core**] Programming Concepts document
-- [ ] [**core**] Implemented your own game using `p5.js`
+- [x] [**core**] Programming Concepts document
+- [x] [**core**] Implemented your own game using `p5.js`
 
 
 Scores for Assignments will be given as the following:
