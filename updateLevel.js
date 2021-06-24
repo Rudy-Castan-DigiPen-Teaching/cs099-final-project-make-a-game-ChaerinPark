@@ -140,6 +140,11 @@ function judgement()
             current_life--;
         }
     }
+    if(current_life == 0 && NOTICE === "♬")
+    {
+        BGM2.stop();
+        fail_SFX.play();
+    }
 
     switch(CurrentPage)
     {

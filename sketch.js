@@ -15,6 +15,7 @@ function preload()
     right_SFX = loadSound('media/sound/SFX/right.wav');
     wrong_SFX = loadSound('media/sound/SFX/wrong.wav');
     clap_SFX = loadSound('media/sound/SFX/clap.mp3');
+    fail_SFX = loadSound('media/sound/SFX/fail.mp3');
 
     //piano
     pianoC = loadSound('media/sound/piano/pianoC.mp3');
@@ -74,8 +75,12 @@ function preload()
 function setup()
 {
     createCanvas( 1200, 800 );
-    BGM.setVolume(0.4);
-    BGM2.setVolume(0.15);
+    BGM.setVolume(0.2);
+    BGM2.setVolume(0.05);
+    wrong_SFX.setVolume(0.5);
+    right_SFX.setVolume(0.7);
+    clap_SFX.setVolume(0.7);
+    fail_SFX.setVolume(0.6);
     BGM.loop();
     character = new musicQuestion(140, 160);
     player = new musicAnswer(110, height-380);

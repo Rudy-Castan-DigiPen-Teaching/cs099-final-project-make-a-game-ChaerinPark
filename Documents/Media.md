@@ -31,7 +31,7 @@
 
 
 ### **Stage background music is from https://www.bensound.com/**
- - BGM2.mp3
+ - BGM2.mp3  (Original title - Jazzy Frenchy)
 ```
 You can use Bensound's music available under the Free License (with the black download button) in your multimedia project (online videos, websites, animations, etc.) for free as long as you credit Bensound.com. Examples of a proper way to credit us: "Music: https://www.bensound.com/royalty-free-music or "Music: « Song Title » from Bensound.com"
 
@@ -50,7 +50,8 @@ You cannot:
 
 
 ### **Clap sound effect is from https://soundeffect-lab.info/**
-  - clap.mp3
+  - clap.mp3  (Original title - 歓声と拍手2(Cheers and applause 2))
+  - fail.mp3  (Original title - 呪いの旋律(the melody of a curse))
 
 ![koukaonrabo](/media/picture/koukaonrabo.png)
 

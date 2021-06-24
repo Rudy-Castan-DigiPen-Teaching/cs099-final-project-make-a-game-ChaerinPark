@@ -80,6 +80,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
         - right_SFX
         - wrong_SFX
         - clap_SFX
+        - fail_SFX
     ```
     - instrument sound
         - piano
@@ -268,7 +269,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     }
 ```
 
-- SelectLevel page (sketch.js | line 164~184)
+- SelectLevel page (sketch.js | line 169~189)
 ```
     If your curser is on the button of level,
     the explanation box about each stage is appeared on right screen.
@@ -329,13 +330,15 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     }
 ```
 
-- function keyPressed (keyPressed.js | )
+- function keyPressed (keyPressed.js | line 19~175, 178~232)
 ```
     If you press key [Z S X D C V G B H N J M],
     plays each code and push the code in musicA array.
 
     If you press Enter key, new question is made.
     Arrays of previous question is all reset.
+
+    And If you fail the level, press Enter key, you can retry that level.
 ```
 ```
     if(key === 'z')
@@ -476,7 +479,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
  ```
 
 
- - function make_musicQ_array (updateLevel.js | line 227~263)
+ - function make_musicQ_array (updateLevel.js | line 232~268)
  ```
     For compare question and your answer, make question's array to use conditional statement.
     Array musicQ_sound is an array of sound files, so can't compare.
@@ -492,7 +495,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
  ```
 
 
- - function judgement (updateLevel.js | line 134~141, 148~162, 166~180, 185~199, 204~217)
+ - function judgement (updateLevel.js | line 134~141, 143~147, 153~167, 171~185, 190~204, 209~222)
  ```
     To use conditional statement, compare musicQ array and musicA array.
 
@@ -515,7 +518,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
  ```
 
- - to remove particles (sketch.js | line 101~104)
+ - to remove particles (sketch.js | line 106~109)
  ```
     If star particles goes out to canvas, remove particles,
     to reduce the amount of data occupied.
@@ -533,8 +536,8 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 I used only for loop.
   - to draw and remove particle
   ```
-    for(let Particle of particleStar)                       //sketch.js | line 92
-    for(let i = particleStar.length-1; i>=0; --i)           //sketch.js | line 98
+    for(let Particle of particleStar)                       //sketch.js | line 97
+    for(let i = particleStar.length-1; i>=0; --i)           //sketch.js | line 103
   ```
   - to draw keyboard (both character's and player's)        
   ```

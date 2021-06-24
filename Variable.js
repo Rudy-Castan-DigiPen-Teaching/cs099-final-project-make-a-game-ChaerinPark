@@ -13,6 +13,7 @@ let click_SFX;
 let right_SFX;
 let wrong_SFX;
 let clap_SFX;
+let fail_SFX;
 
 //piano sound
 let pianoC;
