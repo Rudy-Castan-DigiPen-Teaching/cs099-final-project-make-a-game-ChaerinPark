@@ -269,7 +269,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     }
 ```
 
-- SelectLevel page (sketch.js | line 170~190)
+- SelectLevel page (sketch.js | line 171~191)
 ```
     If your curser is on the button of level,
     the explanation box about each stage is appeared on right screen.
@@ -518,7 +518,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
  ```
 
- - to remove particles (sketch.js | line 107~110)
+ - to remove particles (sketch.js | line 108~111)
  ```
     If star particles goes out to canvas, remove particles,
     to reduce the amount of data occupied.
@@ -536,8 +536,8 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 I used only for loop.
   - to draw and remove particle
   ```
-    for(let Particle of particleStar)                       //sketch.js | line 98
-    for(let i = particleStar.length-1; i>=0; --i)           //sketch.js | line 104
+    for(let Particle of particleStar)                       //sketch.js | line 99
+    for(let i = particleStar.length-1; i>=0; --i)           //sketch.js | line 105
   ```
   - to draw keyboard (both character's and player's)        
   ```

@@ -71,6 +71,7 @@ function preload()
     accordion = loadImage('media/picture/game/illust_accordion.png');
     celesta = loadImage('media/picture/game/illust_celesta.png');
     HowToPlay_image = loadImage('media/picture/game/HowToPlay.png');
+    credit_image = loadImage('media/picture/game/credit.png');
 }
 
 function setup()
@@ -200,7 +201,7 @@ function draw()
         
         case(credit):
             {
-                text("Credit page", width/2, height/2);
+                image(credit_image, width/2, height/2);
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
             } break;

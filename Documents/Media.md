@@ -12,6 +12,8 @@
  - illust_piano.png
  - illust_accordion.png
  - illust_celesta.png
+ - HowToPlay.png
+ - credit.png
 
 
 ---
