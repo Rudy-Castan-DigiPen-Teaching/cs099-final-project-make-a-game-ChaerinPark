@@ -12,6 +12,7 @@
  - illust_piano.png
  - illust_accordion.png
  - illust_celesta.png
+ - title.png
  - HowToPlay.png
  - credit.png
 
@@ -55,7 +56,7 @@ You cannot:
   - clap.mp3  (Original title - 歓声と拍手2(Cheers and applause 2))
   - fail.mp3  (Original title - 呪いの旋律(the melody of a curse))
 
-![koukaonrabo](/media/picture/koukaonrabo.png)
+![koukaonrabo](/media/picture/documentImage/koukaonrabo.png)
 
 ```
 By downloading the audio file(MP3 format) of this site, you are deemed to have agreed to the following terms.

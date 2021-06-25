@@ -1,5 +1,6 @@
 ## Game High Concept
 
+### Title - TEST! Memory & Perfect Pitch
 I will make a game that `playing the keyboard instrument`.
 
 This game is, listen the melody what this program is playing, and you press the matching keyboards.
@@ -32,13 +33,19 @@ After buy these instruments, you can choose instrument and can play that instrum
 
 ----
 
-## Prototype
- - Prototype
-
-
-----
-
 ## Moke up
+
+### First Prototype
+![prototype1](/media/picture/documentImage/prototype1.jpg)
+
+### Second Prototype
+ - change UI of SelectLevel page and Shop page
+ - change questions' form
+    ```
+    play particular songs -> play some codes randomly
+    ```
+![prototype2](/media/picture/documentImage/prototype2.jpg)
+![prototype2-1](/media/picture/documentImage/prototype2-1.jpg)
 
 In main page, there are 4 buttons and title of game.
   - Start
@@ -79,9 +86,9 @@ You can buy celesta and accordion sound by 50 golds. After bought, you can selec
 
 
 ### How to Play
-    Press the How to Play button, go to explain page.
+    Press the How to Play button, go to explanation page.
 
-There is explanation about game play simply like this markdown file.
+There is explanation about game play simply like this markdown file, with game screenshot.
 
 
 ### Credit

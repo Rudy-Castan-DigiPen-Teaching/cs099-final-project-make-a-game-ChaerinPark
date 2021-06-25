@@ -72,6 +72,7 @@ function preload()
     celesta = loadImage('media/picture/game/illust_celesta.png');
     HowToPlay_image = loadImage('media/picture/game/HowToPlay.png');
     credit_image = loadImage('media/picture/game/credit.png');
+    title = loadImage('media/picture/game/title.png');
 }
 
 function setup()
@@ -115,6 +116,7 @@ function draw()
     {
         case (Main):
             {
+                image(title, width/2, 180);
                 BGM2.stop();
                 Button(width/2, height * 4/8, Main_button_width, Main_button_height, "START");
                 Button(width/2, height * 5/8, Main_button_width, Main_button_height, "Shop");
@@ -126,6 +128,7 @@ function draw()
 
         case (Shop):
             {
+                image(title, width-100, height-50, 250, 75);
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
                 push();
@@ -167,7 +170,6 @@ function draw()
                 Button(width/6, height * 3/7 +20, Level_button_width, Level_button_height, "Lv. 2");
                 Button(width/6, height * 4/7 +30, Level_button_width, Level_button_height, "Lv. 3");
                 Button(width/6, height * 5/7 +40, Level_button_width, Level_button_height, "Lv. 4");
-
                 if(mouseX > width/6 - Level_button_width/2 && mouseX < width/6 + Level_button_width/2
                     && mouseY > height * 2/7 - Level_button_height/2 && mouseY < height * 2/7 + Level_button_height/2)
                 {
@@ -189,6 +191,7 @@ function draw()
                     explanation_box(530, 130, explanation_box_width, explanation_box_height,
                         "In Level 4, \n play four codes randomly \n faster than other Level. \n and no alphabets on the keys \n like Level 3. \n Most difficult level. \n\n number of clear \n " + clearLv4);
                 }
+                image(title, width-100, height-50, 250, 75);
             } break;
         
         case (HowToPlay):
@@ -196,7 +199,7 @@ function draw()
                 image(HowToPlay_image, width/2, height/2);
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
-
+                image(title, width-100, height-50, 250, 75);
             } break;
         
         case(credit):
@@ -204,6 +207,7 @@ function draw()
                 image(credit_image, width/2, height/2);
                 Button(width-50, 50, GoToMain_button, GoToMain_button);
                 HomeMark(width-50, 50);
+                image(title, width-100, height-50, 250, 75);
             } break;
 
         case(Lv1):

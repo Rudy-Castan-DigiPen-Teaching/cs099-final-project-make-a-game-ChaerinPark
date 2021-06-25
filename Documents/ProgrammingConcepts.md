@@ -19,8 +19,8 @@ And I didn't used colors that hurt my eyes.
 (RGB)
 background pink: (255, 200, 200)
 
-               default      curser on the button       button is pressed
-button color:   (255)    ->    (255, 230, 230)    ->    (240, 160, 160)
+               default       curser is on the button       button is pressed
+button color:   (255)    ->      (255, 230, 230)      ->    (240, 160, 160)
 
                            default           button is pressed
 button stroke color:   (200, 120, 120)   ->   (180, 100, 100)
@@ -269,7 +269,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     }
 ```
 
-- SelectLevel page (sketch.js | line 171~191)
+- SelectLevel page (sketch.js | line 173~193)
 ```
     If your curser is on the button of level,
     the explanation box about each stage is appeared on right screen.
@@ -518,7 +518,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
  ```
 
- - to remove particles (sketch.js | line 108~111)
+ - to remove particles (sketch.js | line 109~112)
  ```
     If star particles goes out to canvas, remove particles,
     to reduce the amount of data occupied.
@@ -533,11 +533,11 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 ----
 
 ## 5. Loops
-I used only for loop.
+I used only for loop to coding shortly and simply.
   - to draw and remove particle
   ```
-    for(let Particle of particleStar)                       //sketch.js | line 99
-    for(let i = particleStar.length-1; i>=0; --i)           //sketch.js | line 105
+    for(let Particle of particleStar)                       //sketch.js | line 100
+    for(let i = particleStar.length-1; i>=0; --i)           //sketch.js | line 106
   ```
   - to draw keyboard (both character's and player's)        
   ```
@@ -611,10 +611,24 @@ I used only for loop.
     - Vec2 (to drop the particles)
     - Particle (to draw colorful star shape particle)
 
+    I reuse Vec2 class and Particle class I made when I did exercise.
+
+    To inform players that they have cleared the stage through visual effects other than text.
+
  - To draw keyboards
     - musicQuestion (character's keyboard)
     - musicAnswer (player's keyboard)
 
+    I thought it is better to use class to draw than function.
+    Because in needs
+    ```
+    Arrays
+        - musicQ_sound
+        - musicQ
+        - PianoCode
+        - CelestaCode
+        - AccordionCode
+    ```
 ----
 
 ## 8. Arrays
@@ -623,6 +637,7 @@ I used only for loop.
     What_Key_B = ["S", "D", "", "G", "H", "J"];
     What_Key_W = ["Z", "X", "C", "V", "B", "N", "M"];
     ```
+    I want to don't hard coding. So I made array, and use for loop so draw that alphabets with simple code.
  - To draw particles
     ```
     particleStar = [];
@@ -648,6 +663,21 @@ I used only for loop.
         AccordionCode
           = [accordionC, accordionCs, accordionD, accordionDs, accordionE, accordionF, accordionFs, accordionG, accordionGs, accordionA, accordionAs, accordionB];
     ```
+    If I made a game with particular songs, the capacity would have become too large.
+
+    So I change the game
+    >play particular songs -> play some codes randomly .
+
+    For minimize capacity, I made sound files by code.
+
+    And I thought, the sample sound should be the same note, to compare the sound of each instrument.
+    It shouldn't play randomly. So I made arrays for sample sound.
+    ```
+    sample_piano  /  sample_celesta  /  sample_accordion
+    ```
+    And for play codes randomly, I should use random().
+
+    So I should that sound files put together.
 
  - To compare question and answer, and judgement
     ```
@@ -657,3 +687,7 @@ I used only for loop.
         musicA = [];
           : if you press keyboard, push corresponding codes every level, every question.
     ```
+    I can't use musicQ_sound array. Because in that array, there are sound files.
+    So can't be compared.
+
+    So I made another array to use text only. 
