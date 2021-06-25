@@ -25,7 +25,7 @@ button color:   (255)    ->      (255, 230, 230)      ->    (240, 160, 160)
                            default           button is pressed
 button stroke color:   (200, 120, 120)   ->   (180, 100, 100)
 
-particle color: (255, random(155~255), random(155~255))
+particle color: (255, random(155-255), random(155-255))
         => It return like pink, yellow, golden sand, pastel magenta, and white.
 
 explanation box color: (255, 170)
@@ -248,7 +248,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 
 ## 4. Conditional Statements
 
-- function Button (function.js | line 18~30)
+- function Button (function.js | line 18-30)
 ```
     If your curser is on the button,
     button color changed from white to pale pink.
@@ -269,7 +269,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     }
 ```
 
-- SelectLevel page (sketch.js | line 173~193)
+- SelectLevel page (sketch.js | line 173-193)
 ```
     If your curser is on the button of level,
     the explanation box about each stage is appeared on right screen.
@@ -285,7 +285,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
 ```
 
-- function speechBubble (function.js | line 77~95)
+- function speechBubble (function.js | line 77-95)
 ```
     If you press the key, text in speech bubble changed.
     (3. Variables - NOTICE)
@@ -299,7 +299,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
 ```
 
-- function playing_character (function.js | line 101~120)
+- function playing_character (function.js | line 101-120)
 ```
     character's arm is moving every time.
     And character's face changes depending on the your answer.
@@ -316,7 +316,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
 ```
 
-- function star_particle_effect (function.js | line 154~160)
+- function star_particle_effect (function.js | line 154-160)
 ```
     If you clear level, star particles are drawn.
 ```
@@ -330,7 +330,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     }
 ```
 
-- function keyPressed (keyPressed.js | line 19~175, 178~232)
+- function keyPressed (keyPressed.js | line 19-175, 178-232)
 ```
     If you press key [Z S X D C V G B H N J M],
     plays each code and push the code in musicA array.
@@ -394,7 +394,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like these.
 ```
 
-- class musicQuestion (musicQuestion.js | line 39~66, 92~96, 99~118, 126~130)
+- class musicQuestion (musicQuestion.js | line 39-66, 92-96, 99-118, 126-130)
 ```
     If code sound is playing, the corresponding color of the key
     changed from white or black to hot pink.
@@ -422,7 +422,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 ```
 
 
-- class musicAnswer (musicAnswer.js | line 30~62, 74~81, 84~103, 107~111)
+- class musicAnswer (musicAnswer.js | line 30-62, 74-81, 84-103, 107-111)
 ```
     If you press the keys of piano keyboard, the corresponding color of the key
     changed from white or black to hot pink.
@@ -453,7 +453,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 ```
 
 
- - function updateLevel 1~4 (updateLevel.js | line 10~25, 34~52, 61~82, 91~115)
+ - function updateLevel 1-4 (updateLevel.js | line 10-25, 34-52, 61-82, 91-115)
  ```
     To use conditional statement, apply to play the sound of the selected instrument.
  ```
@@ -479,7 +479,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
  ```
 
 
- - function make_musicQ_array (updateLevel.js | line 232~268)
+ - function make_musicQ_array (updateLevel.js | line 232-268)
  ```
     For compare question and your answer, make question's array to use conditional statement.
     Array musicQ_sound is an array of sound files, so can't compare.
@@ -495,7 +495,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
  ```
 
 
- - function judgement (updateLevel.js | line 134~141, 143~147, 153~167, 171~185, 190~204, 209~222)
+ - function judgement (updateLevel.js | line 134-141, 143-147, 153-167, 171-185, 190-204, 209-222)
  ```
     To use conditional statement, compare musicQ array and musicA array.
 
@@ -518,7 +518,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
     like this.
  ```
 
- - to remove particles (sketch.js | line 109~112)
+ - to remove particles (sketch.js | line 109-112)
  ```
     If star particles goes out to canvas, remove particles,
     to reduce the amount of data occupied.
@@ -558,25 +558,25 @@ I used only for loop to coding shortly and simply.
 ----
 
 ## 6. Functions
- - Button (function.js | line 7~47)
+ - Button (function.js | line 7-47)
  ```
     Button function has the parameters of button's size and text.
     So it can use when I made any button anywhere.
  ```
 
- - HomeMark (function.js | line 50~60)
+ - HomeMark (function.js | line 50-60)
  ```
     It only used 'go to main page' button.
     It drawn on the button.
  ```
 
- - speechBubble (function.js | line 63~97)
+ - speechBubble (function.js | line 63-97)
  ```
     It is a function to draw speech bubble and texts in that each level.
     It drawn under the character's keyboard.
  ```
 
- - playing_character (function.js | line 99~121)
+ - playing_character (function.js | line 99-121)
  ```
     Character's arms are move once a second, like playing instrument.
     And the face changes depending on the result.
@@ -584,20 +584,20 @@ I used only for loop to coding shortly and simply.
     and in order to provide visual familiarity.
  ```
 
- - explanation_box (function.js | line 123~133)
+ - explanation_box (function.js | line 123-133)
  ```
     In SelectLevel page, if your mouse curser is on the level button,
     explanation box is drawn.
     Because the descriptions vary each level, so added the parameter about text.
  ```
 
- - life (function.js | line 135~149)
+ - life (function.js | line 135-149)
  ```
     It draw life you have as heart shape.
     If you press wrong code, life is decrease 1.
  ```
 
- - star_particle_effect (function.js | line 152~161)
+ - star_particle_effect (function.js | line 152-161)
  ```
     If you clear level, particles of star shape are drawn.
     The color of particles is random(red, white, pink, yellow, pastel purple...)
