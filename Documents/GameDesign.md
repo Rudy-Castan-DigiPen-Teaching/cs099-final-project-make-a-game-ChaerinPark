@@ -33,7 +33,7 @@ After buy these instruments, you can choose instrument and can play that instrum
 
 ----
 
-## Moke up
+## Mock ups
 
 ### First Prototype
 ![prototype1](/media/picture/documentImage/prototype1.jpg)
