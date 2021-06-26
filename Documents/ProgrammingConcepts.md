@@ -1,5 +1,5 @@
 ## 1. Shapes
-It is a commands to draw shapes. (triangle, circle, ellipse, rect ... ect)
+It is a commands to draw shapes. (triangle, circle, ellipse, rect ... etc)
 
 I used those for draw buttons, keyboards, and particles.
  ```
@@ -13,7 +13,7 @@ particle <- vertex(to draw star. I'll use particle class that I made before.)
 ----
 
 ## 2. Colors
-It is a command to fill the color of shapes, background, text, stroke... ect.
+It is a command to fill the color of shapes, background, text, stroke... etc.
 
 Basically I used **pink and red color**.
 ```
@@ -47,7 +47,7 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 I can make and named it what I want, and put specific values in variables.
 It is a factor that can change depending on the situations.
 
-It used to store specific value, or load some files... ect.
+It used to store specific value, or load some files... etc.
 
  - for load images
      - title & image to explain
