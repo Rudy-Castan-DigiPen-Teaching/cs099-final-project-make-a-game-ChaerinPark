@@ -1,5 +1,7 @@
 ## 1. Shapes
- Use for draw buttons, keyboards, and particles.
+It is a commands to draw shapes. (triangle, circle, ellipse, rect ... ect)
+
+I used those for draw buttons, keyboards, and particles.
  ```
 button <- rect, triangle(to make Home mark)
 keyboards <- rect
@@ -11,7 +13,9 @@ particle <- vertex(to draw star. I'll use particle class that I made before.)
 ----
 
 ## 2. Colors
-Basically I'll use **pink and red color**.
+It is a command to fill the color of shapes, background, text, stroke... ect.
+
+Basically I used **pink and red color**.
 ```
 I want to give off a soft, warm and bright feeling.
 And I didn't used colors that hurt my eyes.
@@ -40,6 +44,11 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 ----
 
 ## 3. Variables
+I can make and named it what I want, and put specific values in variables.
+It is a factor that can change depending on the situations.
+
+It used to store specific value, or load some files... ect.
+
  - for load images
      - title & image to explain
     ```
@@ -247,6 +256,9 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 
 
 ## 4. Conditional Statements
+It is a directive that only makes it work when certain conditions are met.
+The codes in this statement is, unlike other codes(out of the conditional statement),
+if this condition is not met, it doesn't run.
 
 - function Button (function.js | line 18-30)
 ```
@@ -533,6 +545,9 @@ keyboard color:   (255),   (0),   (255, 90, 110)
 ----
 
 ## 5. Loops
+It is a directive that the code in the loop statement to repeat within a certain condition(or range). That run over and over again.
+As with conditional statement, the codes out of the loop statement,are don't run repeatedly. Just run one time.
+
 I used only for loop to coding shortly and simply.
   - to draw and remove particle
   ```
@@ -558,6 +573,9 @@ I used only for loop to coding shortly and simply.
 ----
 
 ## 6. Functions
+It make draw or run long code simply. And it's possible to add parameters to the function,
+so can make looking good and shortly my code.
+
  - Button (function.js | line 7-47)
  ```
     Button function has the parameters of button's size and text.
@@ -607,6 +625,8 @@ I used only for loop to coding shortly and simply.
 ----
 
 ## 7. Classes
+It likes a function, but it can put a lot of function in a class. So I can coding more simply, and use more easily.
+
  - To draw particle effect
     - Vec2 (to drop the particles)
     - Particle (to draw colorful star shape particle)
@@ -632,6 +652,9 @@ I used only for loop to coding shortly and simply.
 ----
 
 ## 8. Arrays
+It can contain somethings. I also can make empty array, and push something and pull that.
+It is convenient because can call various elements in one group.
+
  - To draw alphabets on the keyboard
     ```
     What_Key_B = ["S", "D", "", "G", "H", "J"];
