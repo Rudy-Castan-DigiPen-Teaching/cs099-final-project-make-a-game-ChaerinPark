@@ -22,9 +22,10 @@
 ## **Sound Files**
 
 ### **Background music is from https://www.sellbuymusic.com/**
-  - BGM.mp3
+  - BGM.mp3 (Original title - 차이코프스키 - 어린이를 위한 앨범 5번 군대행진곡_2)
+
  ```
-✔ 차이코프스키 - 어린이를 위한 앨범 5번 군대행진곡_2 by SellBuyMusic
+  차이코프스키 - 어린이를 위한 앨범 5번 군대행진곡_2 by SellBuyMusic
   (Tchaikovsky - The Album for children No.5 Military march song_2)
 🎧 Download / Stream 
 - https://www.sellbuymusic.com/musicDetail/8689
@@ -52,10 +53,10 @@ You cannot:
  - wrong.wav
 
 
-### **Clap sound effect is from https://soundeffect-lab.info/**
+### **Clap and fail sound effect are from https://soundeffect-lab.info/**
   - clap.mp3  (Original title - 歓声と拍手2(Cheers and applause 2))
   - fail.mp3  (Original title - 呪いの旋律(the melody of a curse))
-
+  
 ![koukaonrabo](/media/picture/documentImage/koukaonrabo.png)
 
 ```
